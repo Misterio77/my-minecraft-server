@@ -118,7 +118,7 @@ items:
     name: '&eServidor Survival'
     lore:
        - '&7Clique p/ conectar ao servidor &eSurvival'
-    slot: 3
+    slot: 1
     limit-modes: ADVENTURE
     triggers: join, respawn, gamemode-switch
     commands:
