@@ -1,0 +1,79 @@
+#  ____    _                       _          _____
+# / ___|  (_)  _ __ ___    _ __   | |   ___  |_   _|  _ __     __ _
+# \___ \  | | | '_ ` _ \  | '_ \  | |  / _ \   | |   | '_ \   / _` |
+#  ___) | | | | | | | | | | |_) | | | |  __/   | |   | |_) | | (_| |
+# |____/  |_| |_| |_| |_| | .__/  |_|  \___|   |_|   | .__/   \__,_|
+#                         |_|                        |_|
+
+#messages  placeholders:
+# %time% - the cooldown time.
+# %player% - the chosen player.
+# %option% - it will replace it with /tpaccept or /tpdeny.
+console-isnt-player: '&4Console is not a player!'
+
+cooldown-message: '&6You must wait &c%time% &6seconds before using that command again!'
+tprequest-to-online: '&6Jogador não encontrado neste servidor.'
+tpahererequest-to-online: '&6Jogador não encontrado neste servidor'
+notp-to-yourself: '&6Você não pode se teleportar para si mesmo, bobinho.'
+notpahere-to-yourself: '&6Você não pode se teleportar para si mesmo, bobinho.'
+usage-first: 'Peça para se teleportar a alguém.'
+usage-fourth: 'Peça que alguém se teleporte a você.'
+usage-second: '/tpa <jogador>'
+usage-third: '/tpahere <jogador>'
+
+teleport-message: '&6Teleportando...'
+player-left-tp-closed: '&6O jogador desconectou'
+no-teleport-requests: '&6Você não tem nenhum pedido pendente'
+rejected-request: '&c%player% &6rejeitou seu pedido'
+sender-message: '&6Pedido de &c%player% &6recusado.'
+timedout-message: '&6Seu pedido expirou.'
+timedouttpahere-message: '&6Seu pedido expirou.'
+sending-request-message: '&6Enviando pedido para &c%player%&6...'
+accept-message: '&6Aceite ou rejeite com &c%option%&6 '
+tpdeny-message: '&6ou &c%option%&6.'
+sent-request-on-you: '&c%player% &6quer se teleportar para você. '
+sending-tpahererequest-message: '&6Enviando pedido para &c%player%&6'
+tpahereaccept-message: '&6Digite &c%option%&6 '
+tpaheretpdeny-message: '&6ou &c%option%&6.'
+tpaheresent-request-on-you: '&c%player% &6pediu para você se teleportar até lá. '
+no-perm-message: '&cVocê não tem permissão'
+tpdisablemsg: '&6Esse jogador desabilitou &cteleportion &6para si.'
+enabledmessage: '&6Você &ahabilitou &6teleportes para si.'
+disabledmessage: '&6Você &cdesabilitou &6teleportes para si.'
+wait-time-msg: '&6Aguarde &c%time% &6segundos...'
+backmessage: '&6Você foi &cteleportado &6para sua localização anterior.'
+backmessage-error: '&6Você não tem localizações anteriores'
+player-move-cancel-tp: '&6Você se moveu e seu &cpedido&6 foi cancelado.'
+death-message: '&6Você pode voltar para onde morreu usando &c/back'
+disabled-command: '&6Esse comando está desabilitado&6.'
+disabledworld: '&6TPA desabilitado neste mundo.'
+backmessage-1: '&6Aguarde %time% &6segundos...'
+
+#BUTTONS:
+acceptbut: 'Aceitar'
+acceptbut-desc: 'Clique para aceitar'
+acceptbut-color: 'GREEN'
+
+mehBut: ' / '
+mehBut-desc: '<-|->'
+mehBut-color: 'YELLOW'
+
+denybut: 'Recusar'
+denybut-desc: 'Clique para recusar'
+denybut-color: 'RED'
+
+#Intengers
+tpa-cooldown: 0
+back-cooldown: 0
+wait-time-before-tp: 0
+wait-time-before-back: 0
+keep-alive: 60
+
+#Booleans
+disable-back-command: true
+#if you disable this one, when you move it won't cancel your tp request.
+disable-move-system: true
+
+
+disabled-worlds:
+  - 'testworld'

@@ -1,0 +1,5 @@
+options:
+  onWorldChange: true
+  spawnCommand: true
+Worlds:
+  lobby: lobby , 0.5 , 105.0 , 0.5 , 0.0 , 0.0

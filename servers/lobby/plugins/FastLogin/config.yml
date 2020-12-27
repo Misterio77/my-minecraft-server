@@ -1,0 +1,21 @@
+anti-bot:
+  connections: 200
+  expire: 5
+autoRegister: true
+secondAttemptCracked: true
+switchMode: false
+premiumUuid: false
+nameChangeCheck: false
+forwardSkin: true
+premium-warning: true
+ip-addresses: []
+mojang-request-limit: 600
+auto-register-unknown: false
+autoLogin: true
+driver: 'com.mysql.jdbc.Driver'
+host: database
+port: 3306
+database: minecraft
+username: minecrafft
+password: beirute1609
+proxies:

@@ -1,0 +1,9 @@
+message: |
+  &c%kickmsg%
+  &eVocê foi movido para o lobby.
+  &eAguarde uns &b10 &esegundos antes de entrar novamente.
+servername: "lobby"
+mode: blacklist
+list:
+- ban
+- kick

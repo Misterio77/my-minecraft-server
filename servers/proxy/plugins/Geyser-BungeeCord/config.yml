@@ -1,0 +1,30 @@
+bedrock:
+  address: 0.0.0.0
+  port: 19132
+  clone-remote-port: false
+remote:
+  address: auto
+  port: 25565
+  auth-type: offline
+floodgate-key-file: public-key.pem
+command-suggestions: true
+passthrough-motd: true
+passthrough-player-counts: true
+legacy-ping-passthrough: false
+ping-passthrough-interval: 3
+max-players: 100
+debug-mode: false
+general-thread-pool: 32
+allow-third-party-capes: true
+allow-third-party-ears: false
+show-cooldown: true
+show-coordinates: false
+cache-chunks: true
+cache-images: 1
+above-bedrock-nether-building: false
+xbox-achievments-enabled: false
+metrics:
+  enabled: false
+  uuid: 5466bfa3-61aa-4176-b740-613d4f0bbdb2
+use-adapters: true
+config-version: 4

@@ -1,0 +1,17 @@
+useGlobalTablist: true
+updatePing: false
+showHeaderFooter: false
+header: ''
+footer: ''
+forwardDisplayNames: true
+showPlayersOnOtherServersAsSpectators: true
+custom:
+  lines:
+    top:
+    - ''
+    - ''
+    - ''
+custom_lines_top:
+- ''
+- ''
+- ''

@@ -1,0 +1,53 @@
+player_limit: 100
+ip_forward: true
+online_mode: false
+forge_support: true
+permissions:
+  default:
+  - changeskin.command.setskin
+  - changeskin.command.skinupdate
+  - changeskin.command.skinselect
+  - changeskin.command.skinupload
+  - changeskin.command.skinskull
+  - changeskin.command.skininfo
+  - bungeecord.command.server
+  - bungeecord.command.list
+servers:
+  lobby:
+    motd: '&eMinecraft da Informação'
+    address: lobby
+    restricted: false
+  survival:
+    motd: '&eMinecraft da Informação &7 - &bSurvival'
+    address: survival
+    restricted: false
+  skyblock:
+    motd: '&eMinecraft da Informação &7 - &bskyblock'
+    address: skyblock
+    restricted: false
+  modpack:
+    motd: '&eMinecraft da Informação &7 - &bModpack'
+    address: modpack
+    restricted: false
+  modpack-e2es:
+    motd: '&eMinecraft da Informação &7 - &bModpack E2ES'
+    address: modpack-e2es
+    restricted: false
+listeners:
+- max_players: 100
+  host: 0.0.0.0:25577
+  query_enabled: true
+  query_port: 25577
+  ping_passthrough: false
+  motd: '&eMinecraft da Informação'
+  tab_list: GLOBAL_PING
+  priorities:
+  - lobby
+  - survival
+  - skyblock
+  - modpack
+  tab_size: 70
+  force_default_server: true
+stats: 391205fd-94fa-4840-b4be-c87cbd7f857f
+connection_throttle_limit: 5
+log_pings: false

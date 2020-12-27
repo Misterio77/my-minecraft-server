@@ -1,0 +1,18 @@
+default-skins: []
+restoreSkins: true
+instantSkinChange: true
+skinPermission: false
+cooldown: 0
+mojang-request-limit: 600
+server-blacklist: []
+upload-accounts: []
+bukkit-permissions: false
+auto-skin-update: -1
+storage:
+    driver: com.mysql.jdbc.Driver
+    host: database
+    port: 3306
+    database: minecraft
+    username: minecraft
+    password: beirute1609
+proxies:

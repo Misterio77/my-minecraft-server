@@ -1,0 +1,33 @@
+prefix: "&f[&bSuperElytra&f] "
+no-console: >
+  &cConsole can't use player commands.
+reloaded: >
+  &eReloaded.
+no-permission: >
+  &cYou don't have permission to use that.
+not-enough-args: >
+  &cNot enough arguments. Found %argc%, expected %argx%.
+too-many-args: >
+  &cToo many arguments. Found %argc%, expected %argx%.
+launch-enabled: >
+  Crouch to launch has been &aenabled&f.
+launch-disabled: >
+  Crouch to launch has been &cdisabled&f.
+boost-enabled: >
+  Boosted flight has been &aenabled&f.
+boost-disabled: >
+  Boosted flight has been &cdisabled&f.
+all-enabled: >
+  Boosting and launching have been &aenabled&f.
+all-disabled: >
+  Boosting and launching have been &cdisabled&f.
+invalid-argument: >
+  &cGot invalid argument '%invalid%.' Expected %expected%.
+cooldown: >
+  &cYou cannot launch for another %hours%%hours_plural%%minutes%%minutes_plural%%seconds%%seconds_plural%.
+second: " second"
+seconds: " seconds"
+minute: " minute "
+minutes: " minutes "
+hour: " hour "
+hours: " hours "

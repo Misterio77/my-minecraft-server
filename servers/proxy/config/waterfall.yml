@@ -1,0 +1,5 @@
+disable_tab_list_rewrite: false
+disable_modern_tab_limiter: true
+use_netty_dns_resolver: false
+disable_entity_metadata_rewrite: true
+log_initial_handler_connections: false

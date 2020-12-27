@@ -1,0 +1,13 @@
+help|ajuda|comandos: |
+  &eServidores:
+    &7- &eSurvival
+    &7- &eSkyblock
+    &7- &eFactions
+    &7- &eCriativo
+    &7- &aLobby
+  &e(Use &6/server nome&e ou &6/nome&e para mudar de servidor.)
+
+  &eUse &6/discord&e para ver o link do Discord.
+  &aVeja o livro no lobby para mais informações.
+discord: "&bEntre no nosso Discord: &ehttps://discord.gg/B3VgXvW"
+mapa: "&bVeja o mapa do servidor survival em: &ehttps://mapa.misterio.me"

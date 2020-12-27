@@ -1,0 +1,11 @@
+config:
+  ==: SuperElytraConfig # If you change this line, the plugin may not load properly.
+  chargeup-ticks: 10 # How many ticks it takes to launch from the ground.
+  speed-multiplier: 1.4 # How much to increase the flying speed each tick.
+  launch-multiplier: 2.0 # How much to increase the boost amount.
+  default: true # If flight/boosting should be enabled by default.
+  charge-sound: FUSE
+  ready-sound: BAT_TAKEOFF
+  launch-sound: ENDERDRAGON_WINGS
+  autosave-interval: 600 # Saves player preferences in this second interval.
+  cooldown: 10 # Cooldown on launching in miliseconds.

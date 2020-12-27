@@ -1,0 +1,292 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 6
+npc:
+  '3':
+    metadata:
+      cached-skin-uuid: d36d835f-e707-4d43-8286-14ed7c325ac2
+      cached-skin-uuid-name: bb2eb788-ef29-49d1-9420-029c4fdac510
+      nameplate-visible: 'false'
+    name: skyblock
+    uuid: 2e0bc2eb-2816-4564-875a-4d3d8eac7883
+    traits:
+      location:
+        bodyYaw: -129.23929
+        world: world
+        x: '-2.5'
+        y: '107.5'
+        z: '9.5'
+        yaw: '-129.2393'
+        pitch: '14.6171'
+      spawned: true
+      lookclose:
+        range: '5.0'
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        randomPitchRange:
+          '0': -10.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: scLnzJrhZU4O97BXN2JsGCOq4I0SytQcMoMUZSV8Tn66eBmtHk0l2lMRCMUXp2MDSkMlDJLuNmQo/IEMHTFWlKvSmi0dNhMQz/jLr0AEtwr/1eBSD/pZUvz7tFP/vhfAOpX2O7QIHriD6wBu7GRQ8TQc1PSmaAFfBJJ46k9mE+nFXKBSn2C/duqeTxbzG4xyqOIxG54TKnEVvqwIm+PGYmc3sRkh5nSCEWl/en/rzJ7RasAGOi3AYMUirOlWAWgZ0pAipzsO622WYmXvc+hwnd2NZgGtu6tAV5idneJnLX8xQHV93NgKXOG/q2AQ3i6SQaFf0ixcyOLq72XJ9LjyPsbT2wvZhX14J0PIxFjnxJ5qyDzCyTisr+pSXE6Sd9KdNLOPHtA9UKIMwudlnSZrXbJw3xkDbq1iFBHI8Q5oj2FpKRqwAy7W6mtvB9k3dgJTnI8c5Ess+YYRM+AL8BIGWhShBZ4RBhvkHeZXD1AeKZI21n/J44p0tgaSii+7cz+h6PAh7jNrcpt6Kltr6EDk2178VyHhfm6kaMyXWyzh8E0VvfjMC8NdsvKZ1TCkGgrQvuYDzoZsKrTFtcc4QlqWq9xeoDlMn25cL1BrFqPzYplL8qKnnsZl7xc9KsnHI5lKkgQFYNc2JYnY6Akle7U2kFWRZNUY8gPBwHLui+TnQ88=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTU5NjgxMDk5MTY4MywKICAicHJvZmlsZUlkIiA6ICIyMWUzNjdkNzI1Y2Y0ZTNiYjI2OTJjNGEzMDBhNGRlYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJHZXlzZXJNQyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9lNzE1ZTE2ZTVjMmFhZmZmMmMzYjM4ZWE4MDgwYTFiMWQ0NmFkZDcxODE0MzE0ZDkxOTQxNTkwZGI3NDJjMjhmIgogICAgfQogIH0KfQ==
+        updateSkins: false
+        skinName: bb2eb788-ef29-49d1-9420-029c4fdac510
+      type: PLAYER
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        commands:
+          '0':
+            command: server skyblock
+            hand: RIGHT
+            player: true
+            op: false
+            cooldown: 0
+            n: -1
+            delay: 0
+      owner:
+        owner: Misterio7
+        uuid: d31f1073-e16f-3a68-ade6-f9168fc081b3
+    traitnames: equipment,spawned,commandtrait,type,inventory,location,owner,scoreboardtrait,mounttrait,skintrait,lookclose
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '2':
+    metadata:
+      cached-skin-uuid: a865229e-503a-4c2d-918f-35857d071d52
+      cached-skin-uuid-name: 3d22f673-473b-467e-a46f-4bc99fcf8309
+      nameplate-visible: 'false'
+    name: survival
+    uuid: 0533652f-cb69-424b-b1f9-dfaabd4659e6
+    traits:
+      location:
+        bodyYaw: 179.28467
+        world: lobby
+        x: '0.5'
+        y: '107.0'
+        z: '9.5'
+        yaw: '179.2847'
+        pitch: '11.6475'
+      spawned: true
+      lookclose:
+        range: '5.0'
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        randomPitchRange:
+          '0': -10.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: pVpIepDo7esWRbpaOI/uOe5oXwbajXB41ddbp0bElQkNr8JdqeWnIUObaNl++NX1HxiQSm8oXnOYSYy0ExmBz+unceHo/Em05ynKCJogjz2shWTSmQyJDF5RvpwaRFGCNk5uMGLaOrcNC2Z5jGAg3RhQlIhYyRBTkd6gxtI6+7v6lQfvC3NhYNBqxubo5NuZqjjM/C+Y8hEprqfk6M2fqfYBsJa2rlDwQrBwabuAJgFiAmVl065xWjR0VzrQT7dGMf3Ev1QXPWxZhc19NMKF196CCpiDjJiOkCdM6KoLv3slVHI6BbufRb9SjFMWJoySwGvwntDGCmXb4TqSaBTwGAEybib6cNmUXRnVWAQFlYbpy3bHcuouxUiHiyqWQReaUqlEY3UMUWgE+jf2dOD4D/jeoYPjsL+KIsOGuNyRWm7iNmtduDWc0EjML57IQB62VpQs2IG8cNiiWOJMNTDfXqC0LxtcnRLfO1MpRJiAV66uQ6pCfJC1zl1DipLwj7PxjqCYWqWrtlWWK8CKw7OkEzSa4eklYkJ9PM6c11vhsTTWmxJu+4I2AUdNVjz8Q9ArcArKseFDq3nXBhRRKS8UcsuHIVfMZNDcNKdYPpQDGB2ttkDuADSOew3vtCHQXagGeEL3di4Mce9eGYGwkQLWf8b9/u7WrORgtco9Xsrk6Rs=
+        skinName: 3d22f673-473b-467e-a46f-4bc99fcf8309
+        textureRaw: eyJ0aW1lc3RhbXAiOjE1NzExNTk3MzgwMDYsInByb2ZpbGVJZCI6IjkxZjA0ZmU5MGYzNjQzYjU4ZjIwZTMzNzVmODZkMzllIiwicHJvZmlsZU5hbWUiOiJTdG9ybVN0b3JteSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjNlMGE5MmQ0ODJkZmY4YWNhYmViMGFiZWYxYjA1MTNmZGUzYzdhZjVmMGM0MjA4MjMwMjQ5NWViZTY2Yjk3NiJ9fX0=
+        updateSkins: false
+      type: PLAYER
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        commands:
+          '0':
+            command: server survival
+            hand: RIGHT
+            player: true
+            op: false
+            cooldown: 0
+            n: -1
+            delay: 0
+      owner:
+        owner: Misterio7
+        uuid: d31f1073-e16f-3a68-ade6-f9168fc081b3
+    traitnames: equipment,spawned,commandtrait,type,location,inventory,owner,scoreboardtrait,mounttrait,skintrait,lookclose
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '5':
+    metadata:
+      cached-skin-uuid: cbc00e20-1efa-418c-a7ad-23ee37bcf255
+      nameplate-visible: 'false'
+      cached-skin-uuid-name: bde6e76d-8962-472f-9bb7-b0ca140c8df1
+    name: factions
+    uuid: e84d71d9-9f44-4263-8418-aded5c648d13
+    traits:
+      type: PLAYER
+      spawned: true
+      skintrait:
+        fetchDefaultSkin: true
+        signature: R8ohDxZzC2VTzQjFnrbKzcmEtvBmpxfP/az8cLWCtN8Hej+8mm0zB2DvELSQTbAbLrMVN9iC4sMlkDaQKRP8Qvg0Mwko+Ln22zrnhzqOcGpKylJhaHdqEg+pDJUse5RLLVkX5XM6WiGHx5qDo6Nq1aGDA9Pg3ZC/VcRn3i4mTYY7nCYqFeRhAPgINjCB8PQcyYSuneBdL5SXCZt5LoehvxWYNNzL0xhY1VxthYMe4/yYgUYrv7+4TDqSteCPFSRVYnG51cGGgJBt2vhHK2kHTQDHVNC2gCg1LlFfftIfZqWHoTrbbxyB2zBtxxy0jkyx7mgLbCXAgXdoLMQzO6/RuX5T1Cs0ya35SHPA9oAYyPtLAF2WeGLQvTEu8JT4DTSLuM8W5SagdqNv2meWyRKcUrDDYXl3z/FXhHBa3QM1si4gPLjscGAovpCa8uA0a6PdCm2FQykMks1YXWhd2j2WTf/KLRqK0qS78jZNAcFB8xxu5J1rfWB1K4xTzsCbMu7ZshnFS7GuRh5mYt6ib8tQLJN/kcZ6iqychI8uE4HgTQYT4G8Lx6FjL9B7zhZijldF3is1FfvuZLzA4XMoC8WExw7/69j0DUjVihwVFm/HmhxLQ8F8nHguZjenoAdDFx+9ue7Sc5kTKgF0y10cMhjw4TeMfmit+ynrQID5SnjP3Kc=
+        skinName: bde6e76d-8962-472f-9bb7-b0ca140c8df1
+        textureRaw: eyJ0aW1lc3RhbXAiOjE1ODI4MzY0OTczNjcsInByb2ZpbGVJZCI6ImJlY2RkYjI4YTJjODQ5YjRhOWIwOTIyYTU4MDUxNDIwIiwicHJvZmlsZU5hbWUiOiJTdFR2Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS80YWFlZTY4ZDNiNDk4ZWI3NTNmNzUzNDU4MTI0OTU4ZjE3YTg5NzcwM2EyM2Q4N2ViYTNkMzQ3MWE1ODU0NTQ0In19fQ==
+        updateSkins: false
+      location:
+        bodyYaw: -117.37017
+        world: world
+        x: '-5.5'
+        y: '107.5'
+        z: '9.5'
+        yaw: '-117.3702'
+        pitch: '13.5334'
+      lookclose:
+        range: '5.0'
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        randomPitchRange:
+          '0': -10.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        commands:
+          '0':
+            command: server factions
+            hand: RIGHT
+            player: true
+            op: false
+            cooldown: 0
+            n: -1
+            delay: 0
+      owner:
+        owner: Misterio7
+        uuid: d31f1073-e16f-3a68-ade6-f9168fc081b3
+    traitnames: equipment,spawned,commandtrait,type,inventory,location,owner,scoreboardtrait,mounttrait,skintrait,lookclose
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '4':
+    metadata:
+      cached-skin-uuid: 4a5fbfa0-09e5-4862-bf9f-98cfe60c36ee
+      nameplate-visible: 'false'
+      cached-skin-uuid-name: 493dcb08-15d8-41f8-9984-1339985a889e
+    name: criativo
+    uuid: 51b1b444-d564-4977-834b-bea1ee85fa2b
+    traits:
+      type: PLAYER
+      spawned: true
+      skinlayers:
+        cape: true
+        hat: true
+        jacket: true
+        left-pants: false
+        left-sleeve: false
+        right-pants: false
+        right-sleeve: false
+      skintrait:
+        fetchDefaultSkin: true
+        signature: QQt1ko6q7cayojAze6RebRqcR8UFGgUFVZv10WjSs0rzpXiPSJBhmLcPIH8oc9Er84IaSpC2KBxdtI4bSVcegqd/mXvriohiPa3BrDvePVY6IVUL8ItCBdNYktScA3YtwkeKAlxkMrjEMYwfE+lANnXLE4oETeu0FJEsj59zvN9qC2gzidpxUHbny3UFhfTA85deZIResxItkrFSgVxRR8U8kxGd5zJm1CKdV20PsvVEQGhjKVDqtUuDoRfqbD6xr2EhDPD5Ij/X9+lp154R18ZKTs2X70t5TXAkszojpMIFDNY7YChbYpLJgHtc32rHK0GMp2aGUhK/gztYD4UJJP3nyKWI99yJe5J7TCOYUn6YVWIKmLiD3YzLCWAj7M6N66N3lo0uRwGdgNt4fv+TuYBN3kGlKl7b0TzFFJoi3y9L/Oct+1vpwgprBK9Qn1oN9niw/Fiuaol60+XteMT4g7jFMrLMxrGVaTLQXPdTFXXD2xsoJPvFemLveG9qbClkSjztCyN5c7IHimg/1i+JuArxYR2YbjcZx8EUN0T9oTT7ry8VjEAoH6bfqDzCSlzrfwrymSc6WXz2bRyMF3anuNjo9Pw5KEaoHoU0qjJY8D0RcvFw6nUmVUAB+NWPOvqtdsT6HxbSo0gvslAhlmAKgcbTBmb+zKT7CCWI/0lf5fM=
+        skinName: 493dcb08-15d8-41f8-9984-1339985a889e
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTU5NDI1OTI3NDc5MywKICAicHJvZmlsZUlkIiA6ICJmNWQwYjFhZTQxNmU0YTE5ODEyMTRmZGQzMWU3MzA1YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJDYXRjaFRoZVdhdmUxMCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS85ODVhNWNmOTIzNzk0NGNiMGQ1NWEzYWNkMmIxOGFjM2MwNTI3YmEyMDM4NDc1MzkyZTRiODdiZGZlYmU5YTY2IgogICAgfQogIH0KfQ==
+        updateSkins: false
+      location:
+        bodyYaw: -177.78548
+        world: world
+        x: '6.5'
+        y: '107.5'
+        z: '9.5'
+        yaw: '-177.7855'
+        pitch: '8.4088'
+      lookclose:
+        range: '5.0'
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        randomPitchRange:
+          '0': -10.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        commands:
+          '0':
+            command: server criativo
+            hand: RIGHT
+            player: true
+            op: false
+            cooldown: 0
+            n: -1
+            delay: 0
+      owner:
+        owner: Misterio7
+        uuid: d31f1073-e16f-3a68-ade6-f9168fc081b3
+    traitnames: equipment,spawned,skinlayers,commandtrait,type,inventory,location,owner,scoreboardtrait,mounttrait,skintrait,lookclose
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '6':
+    metadata:
+      cached-skin-uuid: 84ac723f-b11e-4ad0-9213-83eb2bde781c
+      nameplate-visible: 'false'
+      cached-skin-uuid-name: 2ecd0db8-0f87-40fe-adde-30a7ec2764de
+    name: modpack
+    uuid: 6e07c988-6369-4327-9af0-d465739a1e95
+    traits:
+      skintrait:
+        fetchDefaultSkin: true
+        signature: N48bMy65JHiaR9DLLrcooA0uUgo24XZdDbUDn9apZRyj6GaKDgL4djBcW98vpxxWsfjcZHHy8GhumHI/CRS8qRxEqu7Gmfn3qBxgYbSoRiQHJg75laXr9idnfOmkWT6GBkWp2/1JeG5uhiTmcHQNmfuSfgi40cmhMF2Gxhw+HSBxG5L1M87WSmaHhYkY0zP9e7iaY5HYALQvDUzkTsRslIHcxv9pI3qbKf67Mxh2AnqNdsXkx9vte9Pvq8CzknjvKiTPsiFGgJKwLPWoESUB++s6bR3a9oJ8cdNqcTsSFWqt16++3XCMiNlEi9vjKzUhQHrgbEl/kmKqznEwOjkXCACXw0sMY9TUOVpl1U8B2W7iiPU/siCw1ZA1j55kGyQk8XtMxQeuy4yge3F7sxYH+22erXWjRZ4zi6Fj0eSU/n2m8opAq+ECKs+Uw4fWCTod/t/6l1iQ5rkxRqITGf+U7y0pdFyOEM26Q/TzpKYaOx/Xsek6DLi1913eOtiyJhjXBghTAdcmT3M2SM0sgwtLiKbKQFCZDFMrpv4Y8iFHMlE8DMOa3hOqf3fSNGCkn1rTCEkAJzXKDymJX0rbOt5vafkRToMGBUXTjuMXjcy6dlNvmp5uzldERD2w9h8qLJmZDnLEzqxh5ED1BvMMggsNN5woTRpGAnHKNM4qOLx0d0M=
+        skinName: 2ecd0db8-0f87-40fe-adde-30a7ec2764de
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYwMzE1OTc3MDE4NSwKICAicHJvZmlsZUlkIiA6ICJmMjc0YzRkNjI1MDQ0ZTQxOGVmYmYwNmM3NWIyMDIxMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJIeXBpZ3NlbCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9lYzJiYmQwMTE1MmE5NTBlZDE4ODc3YWJiOWNhNWJiMmFhZmE2MDFmZTJkZTEyNTFhMzRjOTlmYTg3ZDRkZmMxIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: 127.71866
+        world: lobby
+        x: '3.6008'
+        y: '107.5'
+        z: '9.4962'
+        yaw: '127.7187'
+        pitch: '14.1783'
+      lookclose:
+        range: '5.0'
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        randomPitchRange:
+          '0': -10.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      type: PLAYER
+      spawned: true
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        commands:
+          '0':
+            command: server modpack
+            hand: RIGHT
+            player: true
+            op: false
+            cooldown: 0
+            n: -1
+            delay: 0
+      owner:
+        owner: Misterio7x
+        uuid: b094c46b-90d6-385a-96d9-5e740ed98070
+    traitnames: equipment,spawned,commandtrait,type,inventory,location,owner,scoreboardtrait,mounttrait,skintrait,lookclose
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

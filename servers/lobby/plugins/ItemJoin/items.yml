@@ -1,0 +1,158 @@
+# --{ =-=-=-=-=-=-=-=-=-= ItemJoin's Custom Item Configurations, by RockinChaos =-=-=-=-=-=-=-=-=-= }--
+# See the tutorial page for a more in-depth explaination; https://github.com/RockinChaos/ItemJoin/wiki
+# Join the discord for easy plugin support; https://discord.gg/D5FnJ7C
+# 
+# Modifying this will cause this file to break and regenerate.
+items-Version: 7
+items-Delay: 0
+items-Overwrite: true
+items-Spamming: false
+items-RestrictCount: true
+items:
+  elytra:
+    id: ELYTRA
+    slot: CHESTPLATE
+    limit-modes: ADVENTURE
+    triggers: join, respawn, gamemode-switch
+    itemflags: unbreakable
+  livro:
+    id: WRITTEN_BOOK
+    slot: 8
+    limit-modes: ADVENTURE
+    triggers: join, respawn, gamemode-switch
+    name: '&eInformações do servidor'
+    lore:
+      - '&7Dê uma lida para saber mais.'
+    author: 'Misterio7'
+    itemflags: hide-attributes
+    pages:
+      intro:
+        - 'Boas vindas ao &5&lMinecraft da Informação&f&r!'
+        - ' '
+        - 'Somos um servidor semi-público, comunitário e transparente criado pela galera do BSI 020.'
+        - ' '
+        - 'Veja as próximas páginas para mais info.'
+      comunicacao:
+        - '&2&lComunicação'
+        - 'Quer conversar com a gente? Pode vir no Discord da turma: <text:&2discord.gg/B3VgXvW><open_url:https://discord.gg/B3VgXvW>'
+        - ''
+        - 'Ou se você quer me contatar:'
+        - 'Discord: &2Misterio#8456'
+        - 'Telegram: <text:&2@Misterio7x><open_url:https://telegram.me/misterio7x>'
+      contaskin_1:
+        - '&3&lConta e Skin'
+        - ''
+        - 'Por ser um servidor pirata, precisamos utilizar autenticação.'
+        - 'Quem tem o original pode optar por utilizar a da Mojang'
+        - 'Caso você esteja utilizando o original e ainda seja pedido login, use &3/original&r para marcar sua conta.'
+      contaskin_2:
+        - 'Caso seu nome tenha uma skin, ela será usada.'
+        - 'Utilize o comando &3/skin <nome>&0 para usar skins de qualquer outra conta'
+        - 'Também posso usar minha conta pra uploadar uma skin pra você, me dá um toque se você quiser.'
+      servidores_lobby:
+        - '&4&lServidores'
+        - ' '
+        - 'Você está no lobby.'
+        - 'Para trocar de servidor, basta interagir com um dos NPCs, clicar com um item do seu inventário, ou utilizar comandos: &4/survival&r ou &4/lobby&r, por exemplo. Você também pode usar &4/server&r.'
+      servidores_survival:
+        - 'No momento temos um servidor de &d&lSurvival&r quase 100% vanilla.'
+        - 'Toda a comunidade do ICMC, USP e amigos são bem vindos.'
+        - 'Optamos por não usar plugins de proteção, então lembre-se de respeitar a construção do amiguinho e só chamar pessoas de confiança.'
+#      servidores_skyblock:
+#        - 'Também temos um servidor &d&lSkyblock&r no estilo clássico.'
+#        - 'Você pode, junto com seus amigos ou sozinho, construir sua ilha, expandir, e até competir nos rankings!'
+#        - 'Futuramente podemos adicionar coisas, dê sugestões caso queira ver algo específico!'
+#      servidores_factions:
+#        - 'Recentemente adicionamos o clássico &d&lFactions&r, com algumas diferenças.'
+#        - 'O mundo é composto de ilha flutuantes, sem nether ou end. Diamantes são extremamente escassos.'
+#        - 'Cria sua facção, junte seus amigos, e domine o servidor!'
+      servidores_modpack:
+        - 'Nosso mais novo servidor é o nosso &d&lModpack&r!'
+        - 'Para jogar, você precisa baixar o modpack, que está na curseforge (busque por &2bsi 020&r).'
+        - 'Use o launcher da Twitch, ou o MultiMC.'
+        - 'Fique de olho no Discord para atualizações!'
+#      servidores_2:
+#        - 'Estamos planejando um servidor &6&lCriativo&r.'
+#        - 'Em breve teremos novidades, lembre-se de enviar qualquer sugestão, crítica ou elogio que você tenha!'
+#      servidores_3:
+#        - 'Todos os servidores (exceto o lobby) suspendem após 10 minutos vazios.'
+#        - 'Para religar, basta tentar entrar e aguardar em torno de 20 segundos (~5 minutos no caso do modpack).'
+#      servidores_4:
+#        - 'Os softwares utilizados são Waterfall para a network, PaperMC ou Sponge para os servidores e ncat para ouvir conexões. Rodando no Arch Linux.'
+#        - 'Eu hosteio esse servidor em casa. Com o sistema de suspensão, não há problemas com uptime.'
+      fim:
+        - '&4&lDivirta-se!'
+        - 'Se tiver qualquer dúvida, fique à vontade para chamar qualquer jogador ou dê um toque no nosso Discord.'
+        - ''
+        - 'Beijos &4<3'
+#  server-criativo:
+#    id: TOTEM_OF_UNDYING
+#    name: '&eServidor Criativo'
+#    lore:
+#       - '&7Em breve'
+#    slot: 1
+#    limit-modes: ADVENTURE
+#    triggers: join, respawn, gamemode-switch
+#    commands:
+#      interact:
+#        - 'server: criativo'
+#      inventory:
+#        - 'server: criativo'
+  server-modpack:
+    id: BLAZE_ROD
+    name: '&eServidor Modpack'
+    lore:
+       - '&7Clique p/ conectar ao servidor &eModpack'
+       - '&7Esse servidor está na 1.12, e requer mods'
+       - '&7Consulte o livro ou o discord para info'
+    slot: 2
+    limit-modes: ADVENTURE
+    triggers: join, respawn, gamemode-switch
+    commands:
+      interact:
+        - 'server: modpack'
+      inventory:
+        - 'server: modpack'
+  server-survival:
+    id: IRON_PICKAXE
+    name: '&eServidor Survival'
+    lore:
+       - '&7Clique p/ conectar ao servidor &eSurvival'
+    slot: 3
+    limit-modes: ADVENTURE
+    triggers: join, respawn, gamemode-switch
+    commands:
+      interact:
+        - 'server: survival'
+      inventory:
+        - 'server: survival'
+    itemflags: hide-attributes
+#  server-skyblock:
+#    id: OAK_SAPLING
+#    name: '&eServidor Skyblock'
+#    lore:
+#       - '&7Clique p/ conectar ao servidor &eSkyblock'
+#    slot: 4
+#    limit-modes: ADVENTURE
+#    triggers: join, respawn, gamemode-switch
+#    commands:
+#      interact:
+#        - 'server: skyblock'
+#      inventory:
+#        - 'server: skyblock'
+#    itemflags: hide-attributes
+#  server-factions:
+#    id: DIAMOND_SWORD
+#    name: '&eServidor Factions'
+#    lore:
+#       - '&7Clique p/ conectar ao servidor &eFactions'
+#    slot: 5
+#    limit-modes: ADVENTURE
+#    triggers: join, respawn, gamemode-switch
+#    commands:
+#      interact:
+#        - 'server: factions'
+#      inventory:
+#        - 'server: factions'
+#    itemflags: hide-attributes
+

@@ -1,0 +1,47 @@
+holograms:
+  nome:
+    location: lobby;0.3659629323184481;108.48610541864927;2.5473879257672403;-7.64992;0.74978304
+    lines:
+    - §7§k!§r Bem-vindx ao §6Minecraft da Informação §7§k!!
+    - §r
+    - §bClique§r em um NPC ou use §bcomandos§r
+    - para escolher seu servidor
+    - §r
+    - Use §e/help§r ou veja o §elivro§r para mais info.
+    - §r
+    - Explore o lobby! Você tem uma §bElytra§r.
+  servers:
+    location: lobby;0.5;109.0;7.5;46.199116;-1.0361023
+    lines:
+    - §b§lServidores
+    - §7%bungee_total% jogador(es) online
+  survival:
+    location: lobby;0.5;109.5;9.5;8.99999;-0.45104495
+    lines:
+    - §e§lSurvival
+    - §aConectar
+    - §7%bungee_survival% jogador(es)
+  skyblock:
+    location: world;-2.5;110.0;9.5;90.0;0.4500188
+    lines:
+    - §e§lSkyblock
+    - §aConectar
+    - §7%bungee_skyblock% jogador(es)
+  criativo:
+    location: world;6.5;110.0;9.5;7.1999407;9.004455
+    lines:
+    - §e§lCriativo
+    - §cEm breve.
+    - §7%bungee_criativo% jogador(es)
+  factions:
+    location: world;-5.5;110.0;9.5;73.05021;-6.2956066
+    lines:
+    - §e§lFactions§r
+    - §aConectar
+    - §7%bungee_factions% jogador(es)
+  modpack:
+    location: lobby;3.5;110.0;9.5;7.3499846;2.398938
+    lines:
+    - §e§lModpack BSI
+    - §aConectar §7(v0.3)
+    - §7%bungee_modpack% jogador(es)

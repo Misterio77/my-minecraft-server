@@ -1,0 +1,32 @@
+# Better Shulker Boxes - By Rektb
+# PLEASE SEE https://github.com/lMartin3/BetterShulkerBoxes/blob/master/src/main/resources/config.yml for an example config.yml
+# PERMISSIONS:
+# bettershulkerboxes.*: Grants all permissions (Recommended for admins)
+# bettershulkerboxes.use.*; Grants all permissions (Recommended for users)
+# bettershulkerboxes.use: Allows players to open shulkerboxes in both ways UNLESS rightclick_requires_permission is set to true
+# bettershulkerboxes.use.rightclick: Allows players to open shulkerboxes by rightclicking them in the inventory (rightclick_requires_permission doesn't matter)
+# bettershulkerboxes.bypasscooldown: Allows players to bypass the cooldown (Recommended for exclusive ranks)
+# bettershulkerboxes.updatenotify: Allows players to receive notification about new versions. (Recommended for admins)
+# bettershulkerboxes.reload: Allows players to reload the config. (Recommended for admins)
+
+version: 2.14.3
+prefix: ''
+inventory_name: '%itemname%'
+open_msg: none
+close_msg: none
+no_permission_msg: '&cVocê não tem permissão para fazer isso aqui'
+cooldown_msg: '&cAguarde antes de usar novamente'
+config_reload_msg: '&bConfiguration reloaded successfully'
+config_reload_error_msg: '&cThere is an error in the configuration, see the console
+  for details'
+cooldown: 5
+open_sound: BLOCK_SHULKER_BOX_OPEN
+close_sound: BLOCK_SHULKER_BOX_CLOSE
+cooldown_enabled: false
+requires_permission: true
+enable_read_only: false
+enable_rclick_air_open: true
+enable_rightclick_open: true
+rightclick_requires_permission: false
+enable_rclick_chest_open: false
+enable_statistics: false
