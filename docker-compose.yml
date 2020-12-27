@@ -32,10 +32,7 @@ services:
             - "./worlds/lobby:/data/lobby"
         environment:
             TYPE: "PAPER"
-            ENABLE_AUTOPAUSE: "TRUE"
-            AUTOPAUSE_TIMEOUT_EST: "120"
-            AUTOPAUSE_TIMEOUT_INIT: "120"
-            AUTOPAUSE_TIMEOUT_KN: "60"
+            ENABLE_AUTOPAUSE: "FALSE"
             MAX_TICK_TIME: "-1"
             COPY_CONFIG_DEST: "/data"
             OVERRIDE_SERVER_PROPERTIES: "TRUE"
