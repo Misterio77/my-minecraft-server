@@ -18,9 +18,9 @@ services:
             ENV_VARIABLE_PREFIX: "CFG_"
             CFG_DB_HOST: "database"
             CFG_DB_PORT: "3306"
-            CFG_DB_NAME: "minecraft"
-            CFG_DB_USERNAME: "minecraft"
-            CFG_DB_PASSWORD: "beirute1609"
+            CFG_DB_NAME: "${DB_NAME}"
+            CFG_DB_USERNAME: "${DB_USERNAME}"
+            CFG_DB_PASSWORD: "${DB_PASSWORD}"
     lobby:
         image: itzg/minecraft-server
         stdin_open: true
@@ -64,9 +64,9 @@ services:
             CFG_SERVER_NAME: "lobby"
             CFG_DB_HOST: "database"
             CFG_DB_PORT: "3306"
-            CFG_DB_NAME: "minecraft"
-            CFG_DB_USERNAME: "minecraft"
-            CFG_DB_PASSWORD: "beirute1609"
+            CFG_DB_NAME: "${DB_NAME}"
+            CFG_DB_USERNAME: "${DB_USERNAME}"
+            CFG_DB_PASSWORD: "${DB_PASSWORD}"
     survival:
         image: itzg/minecraft-server
         stdin_open: true
@@ -115,9 +115,9 @@ services:
             CFG_SERVER_NAME: "survival"
             CFG_DB_HOST: "database"
             CFG_DB_PORT: "3306"
-            CFG_DB_NAME: "minecraft"
-            CFG_DB_USERNAME: "minecraft"
-            CFG_DB_PASSWORD: "beirute1609"
+            CFG_DB_NAME: "${DB_NAME}"
+            CFG_DB_USERNAME: "${DB_USERNAME}"
+            CFG_DB_PASSWORD: "${DB_PASSWORD}"
     modpack:
         image: itzg/minecraft-server
         stdin_open: true
@@ -166,9 +166,9 @@ services:
             CFG_SERVER_NAME: "modpack"
             CFG_DB_HOST: "database"
             CFG_DB_PORT: "3306"
-            CFG_DB_NAME: "minecraft"
-            CFG_DB_USERNAME: "minecraft"
-            CFG_DB_PASSWORD: "beirute1609"
+            CFG_DB_NAME: "${DB_NAME}"
+            CFG_DB_USERNAME: "${DB_USERNAME}"
+            CFG_DB_PASSWORD: "${DB_PASSWORD}"
     modpack-e2es:
         image: itzg/minecraft-server
         stdin_open: true
@@ -217,18 +217,18 @@ services:
             CFG_SERVER_NAME: "modpack-e2es"
             CFG_DB_HOST: "database"
             CFG_DB_PORT: "3306"
-            CFG_DB_NAME: "minecraft"
-            CFG_DB_USERNAME: "minecraft"
-            CFG_DB_PASSWORD: "beirute1609"
+            CFG_DB_NAME: "${DB_NAME}"
+            CFG_DB_USERNAME: "${DB_USERNAME}"
+            CFG_DB_PASSWORD: "${DB_PASSWORD}"
     database:
         image: mariadb
         volumes:
             - "./database:/var/lib/mysql"
         environment:
             MYSQL_RANDOM_ROOT_PASSWORD: "yes"
-            MYSQL_DATABASE: "minecraft"
-            MYSQL_USER: "minecraft"
-            MYSQL_PASSWORD: "beirute1609"
+            MYSQL_DATABASE: "${DB_NAME}"
+            MYSQL_USER: "${DB_USERNAME}"
+            MYSQL_PASSWORD: "${DB_PASSWORD}"
     adminer:
         image: adminer
         ports:

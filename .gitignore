@@ -1,4 +1,3 @@
 database
 worlds
-.tmp
-servers/*/plugins/LuckPerms/libs
+.env
