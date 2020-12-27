@@ -1,7 +1,6 @@
 services:
     proxy:
         image: itzg/bungeecord
-        restart: unless-stopped
         stdin_open: true
         tty: true
         volumes:
@@ -24,7 +23,6 @@ services:
             CFG_DB_PASSWORD: "beirute1609"
     lobby:
         image: itzg/minecraft-server
-        restart: unless-stopped
         stdin_open: true
         tty: true
         volumes:
@@ -71,7 +69,6 @@ services:
             CFG_DB_PASSWORD: "beirute1609"
     survival:
         image: itzg/minecraft-server
-        restart: unless-stopped
         stdin_open: true
         tty: true
         volumes:
@@ -123,7 +120,6 @@ services:
             CFG_DB_PASSWORD: "beirute1609"
     modpack:
         image: itzg/minecraft-server
-        restart: unless-stopped
         stdin_open: true
         tty: true
         volumes:
@@ -175,7 +171,6 @@ services:
             CFG_DB_PASSWORD: "beirute1609"
     modpack-e2es:
         image: itzg/minecraft-server
-        restart: unless-stopped
         stdin_open: true
         tty: true
         volumes:
@@ -227,7 +222,6 @@ services:
             CFG_DB_PASSWORD: "beirute1609"
     database:
         image: mariadb
-        restart: unless-stopped
         volumes:
             - "./database:/var/lib/mysql"
         environment:
@@ -237,6 +231,5 @@ services:
             MYSQL_PASSWORD: "beirute1609"
     adminer:
         image: adminer
-        restart: unless-stopped
         ports:
             - 8080:8080
