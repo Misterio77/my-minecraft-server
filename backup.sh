@@ -1,20 +1,40 @@
 #!/usr/bin/bash
+
+# Working directory with docker-compose
 #doco_dir="/srv/minecraft/server"
 doco_dir="/home/misterio/Documents/Minecraft/Server"
+
+# Which directories to backup (relative to doco_dir)
 backup_dirs="worlds"
-dest_dir="/mnt/backups/minecraft/worlds"
-archive_name="$(date +%Y_%m_%d_%H.%M.%S).tar.gz"
+
+# Where to save the backups
+dest_dir="/mnt/backups/minecraft/server"
+
+# Which servers to disable save while backuping
+servers="lobby modpack survival modpack-e2es"
+
+# Database container name
+database="database"
+
+# Name for the files
+file_name="$(date +%Y_%m_%d_%H.%M.%S)"
 
 cd $doco_dir
-docker-compose ps --services | \
-while read service; do
+source .env
+
+echo "Generating db dump"
+docker-compose exec database mysqldump --user ${DB_USERNAME} --password=${DB_PASSWORD} ${DB_NAME} > "$dest_dir/$file_name.dump"
+
+echo "Stopping autosave and saving"
+for service in $servers; do
     docker-compose exec -T $service rcon-cli save-off &> /dev/null
     docker-compose exec -T $service rcon-cli save-all &> /dev/null
 done
 
-tar cfv - $backup_dirs | gzip --fast - > "$dest_dir/$archive_name"
+echo "Creating archive"
+tar cf - $backup_dirs | gzip --fast - > "$dest_dir/$file_name.tar.gz"
 
-docker-compose ps --services | \
-while read service; do
+echo "Enabling autosave"
+for service in $servers; do
     docker-compose exec -T $service rcon-cli save-on &> /dev/null
 done
