@@ -1,8 +1,7 @@
 #!/usr/bin/bash
 
 # Working directory with docker-compose
-#doco_dir="/srv/minecraft/server"
-doco_dir="/home/misterio/Documents/Minecraft/Server"
+doco_dir="/srv/minecraft/server"
 
 # Which directories to backup (relative to doco_dir)
 backup_dirs="worlds"
