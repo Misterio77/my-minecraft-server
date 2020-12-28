@@ -12,6 +12,6 @@ echo "Unlocking files"
 git annex unlock
 
 docker-compose down -v
-docker-compose up
+docker-compose build
 
-docker-compose stop
+git annex lock
