@@ -1,6 +1,6 @@
 services:
     proxy:
-        image: itzg/bungeecord
+        build: "./servers/proxy"
         stdin_open: true
         tty: true
         ports:
@@ -64,7 +64,7 @@ services:
             CFG_DB_USERNAME: "${DB_USERNAME}"
             CFG_DB_PASSWORD: "${DB_PASSWORD}"
     survival:
-        image: itzg/minecraft-server
+        build: "./servers/survival"
         stdin_open: true
         tty: true
         volumes:
@@ -114,7 +114,7 @@ services:
             CFG_DB_USERNAME: "${DB_USERNAME}"
             CFG_DB_PASSWORD: "${DB_PASSWORD}"
     modpack:
-        image: itzg/minecraft-server
+        build: "./servers/modpack"
         stdin_open: true
         tty: true
         volumes:
@@ -164,7 +164,7 @@ services:
             CFG_DB_USERNAME: "${DB_USERNAME}"
             CFG_DB_PASSWORD: "${DB_PASSWORD}"
     modpack-e2es:
-        image: itzg/minecraft-server
+        build: "./servers/modpack-e2es"
         stdin_open: true
         tty: true
         volumes:
