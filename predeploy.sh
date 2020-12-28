@@ -14,4 +14,3 @@ git annex unlock
 docker-compose down -v
 docker-compose up --no-start
 docker-compose stop
-git annex lock
