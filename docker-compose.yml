@@ -3,9 +3,6 @@ services:
         image: itzg/bungeecord
         stdin_open: true
         tty: true
-        volumes:
-            - "./servers/proxy/plugins:/plugins:ro"
-            - "./servers/proxy/config:/config:ro"
         ports:
             - 25565:25577/tcp
             - 25565:25577/udp
@@ -22,11 +19,10 @@ services:
             CFG_DB_USERNAME: "${DB_USERNAME}"
             CFG_DB_PASSWORD: "${DB_PASSWORD}"
     lobby:
-        image: itzg/minecraft-server
+        build: "./servers/lobby"
         stdin_open: true
         tty: true
         volumes:
-            - "./servers/lobby:/config:ro"
             - "./worlds/lobby:/data/lobby"
         environment:
             TYPE: "PAPER"
@@ -72,7 +68,6 @@ services:
         stdin_open: true
         tty: true
         volumes:
-            - "./servers/survival:/config:ro"
             - "./worlds/survival/world:/data/world"
             - "./worlds/survival/world_nether:/data/world_nether"
             - "./worlds/survival/world_the_end:/data/world_the_end"
@@ -123,7 +118,6 @@ services:
         stdin_open: true
         tty: true
         volumes:
-            - "./servers/modpack:/config:ro"
             - "./worlds/modpack:/data/world"
         environment:
             TYPE: "CUSTOM"
@@ -174,7 +168,6 @@ services:
         stdin_open: true
         tty: true
         volumes:
-            - "./servers/modpack-e2es:/config:ro"
             - "./worlds/modpack-e2es:/data/world"
         environment:
             TYPE: "CUSTOM"
