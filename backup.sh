@@ -22,7 +22,7 @@ cd $doco_dir
 source .env
 
 echo "Generating db dump"
-docker-compose exec database mysqldump --user ${DB_USERNAME} --password=${DB_PASSWORD} ${DB_NAME} > "$dest_dir/$file_name.dump"
+docker-compose exec -T database mysqldump --user ${DB_USERNAME} --password=${DB_PASSWORD} ${DB_NAME} > "$dest_dir/$file_name.dump"
 
 echo "Stopping autosave and saving"
 for service in $servers; do
