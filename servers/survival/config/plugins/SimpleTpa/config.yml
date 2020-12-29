@@ -5,75 +5,102 @@
 # |____/  |_| |_| |_| |_| | .__/  |_|  \___|   |_|   | .__/   \__,_|
 #                         |_|                        |_|
 
-#messages  placeholders:
-# %time% - the cooldown time.
-# %player% - the chosen player.
-# %option% - it will replace it with /tpaccept or /tpdeny.
-console-isnt-player: '&4Console is not a player!'
-
-cooldown-message: '&6You must wait &c%time% &6seconds before using that command again!'
-tprequest-to-online: '&6Jogador não encontrado neste servidor.'
-tpahererequest-to-online: '&6Jogador não encontrado neste servidor'
-notp-to-yourself: '&6Você não pode se teleportar para si mesmo, bobinho.'
-notpahere-to-yourself: '&6Você não pode se teleportar para si mesmo, bobinho.'
-usage-first: 'Peça para se teleportar a alguém.'
-usage-fourth: 'Peça que alguém se teleporte a você.'
-usage-second: '/tpa <jogador>'
-usage-third: '/tpahere <jogador>'
-
-teleport-message: '&6Teleportando...'
-player-left-tp-closed: '&6O jogador desconectou'
-no-teleport-requests: '&6Você não tem nenhum pedido pendente'
-rejected-request: '&c%player% &6rejeitou seu pedido'
-sender-message: '&6Pedido de &c%player% &6recusado.'
-timedout-message: '&6Seu pedido expirou.'
-timedouttpahere-message: '&6Seu pedido expirou.'
-sending-request-message: '&6Enviando pedido para &c%player%&6...'
-accept-message: '&6Aceite ou rejeite com &c%option%&6 '
-tpdeny-message: '&6ou &c%option%&6.'
-sent-request-on-you: '&c%player% &6quer se teleportar para você. '
-sending-tpahererequest-message: '&6Enviando pedido para &c%player%&6'
-tpahereaccept-message: '&6Digite &c%option%&6 '
-tpaheretpdeny-message: '&6ou &c%option%&6.'
-tpaheresent-request-on-you: '&c%player% &6pediu para você se teleportar até lá. '
-no-perm-message: '&cVocê não tem permissão'
-tpdisablemsg: '&6Esse jogador desabilitou &cteleportion &6para si.'
-enabledmessage: '&6Você &ahabilitou &6teleportes para si.'
-disabledmessage: '&6Você &cdesabilitou &6teleportes para si.'
-wait-time-msg: '&6Aguarde &c%time% &6segundos...'
-backmessage: '&6Você foi &cteleportado &6para sua localização anterior.'
-backmessage-error: '&6Você não tem localizações anteriores'
-player-move-cancel-tp: '&6Você se moveu e seu &cpedido&6 foi cancelado.'
-death-message: '&6Você pode voltar para onde morreu usando &c/back'
-disabled-command: '&6Esse comando está desabilitado&6.'
-disabledworld: '&6TPA desabilitado neste mundo.'
-backmessage-1: '&6Aguarde %time% &6segundos...'
-
-#BUTTONS:
-acceptbut: 'Aceitar'
-acceptbut-desc: 'Clique para aceitar'
-acceptbut-color: 'GREEN'
-
-mehBut: ' / '
-mehBut-desc: '<-|->'
-mehBut-color: 'YELLOW'
-
-denybut: 'Recusar'
-denybut-desc: 'Clique para recusar'
-denybut-color: 'RED'
-
-#Intengers
-tpa-cooldown: 0
-back-cooldown: 0
-wait-time-before-tp: 0
-wait-time-before-back: 0
-keep-alive: 60
-
-#Booleans
-disable-back-command: true
-#if you disable this one, when you move it won't cancel your tp request.
-disable-move-system: true
+# Place Holders: %time% | %player% | %option%
 
 
+#Messages:
+prefix: "&c[&6SimpleTpa&c]"
+
+Console-Isnt-Player: "&6Console can't use &cSimpleTpa&6!"
+Disabled-World-Message: "&cTPA desabilitado neste mundo."
+Disabled-Back-Command-Message: "&cO comando &6/back &cestá desabilitado."
+Teleport-Message: "&aVocê será teleportado em &6%time% &asegundos."
+Teleport-Message-Back-To-Player: "&aVocê aceitou o pedido de teleporte."
+Player-Is-Null: "&cEsse jogador não está online."
+Back-Permission-Message: "&cVocê não tem permissão."
+Player-Doesnt-Have-Back-Point: "&cEsse jogador não tem nenhum ponto de retorno."
+Back-Permission-Message-1: "&cVocê não tem permissão para retornar."
+Player-Doesnt-Have-Back-Point-1: "&cVocê não tem nenhum local de retorno para voltar."
+Cooldown-Message: "&cAguarde &6%time% seconds &cpara usar o comando novamente."
+Death-Message: "&ePara retornar onde morreu, use &6/back"
+Teleport-Message-Back-To-Sender-TPHEREALL: "&aEnviando um pedido para teleportar &6todo mundo&a até você."
+No-Permission-Message: "&cVocê não tem permissão."
+TpaToggle-Deactivated-Player-2: "&eO jogador &6%player% &cdesabilitou&e seu tpa."
+TpaToggle-Activated-Player-2: "&eO jogador &6%player% &ahabilitou&e seu tpa."
+TpaToggle-Deactivated-Player: "&eVocê &cdesabilitou&e o tpa de &6%player%&e."
+TpaToggle-Activated-Player: "&eVocê &ahabilitou&e o tpa de &6%player%&e."
+TpaToggle-Deactivated: "&eVocê &cdesabilitou&e o tpa."
+TpaToggle-Activated: "&eVocê &ahabilitou&e o tpa."
+TpaToggled-Player-Message: "&cEsse jogador não está recebendo tpas."
+Player-Is-Player: "&cVocê não pode teleportar para si mesmo, bobinho."
+Already-A-TP-Request: "&cVocê já enviou um pedido. Use &6/tpcancel <jogador>&e caso queira cancelar."
+Tpa-Usage-Message: "&eUse: &6/tpa <jogador>"
+Timed-Out-Message: "&cSeu pedido de teleporte expirou."
+Sending-Teleport-Request: "&aPedido de teleporte enviado para &6%player%&a."
+Accept-Message: "&ePara aceitar, use &a/tpaccept"
+Deny-Message: "&ePara recusar, use &c/tpdeny"
+Sent-Request-On-You: "&6%player% &equer se teleportar até você."
+Timed-Out-Here-Message: "&cSeu pedido de teleporte expirou."
+Sending-Teleport-Here-Request: "&aPedido para teleportar até você enviado para &6%player%&a."
+Sent-Here-Request-On-You: "&6%player% &equer que você se teleporte para lá."
+Already-A-TPHere-Request: "&cVocê já enviou um pedido. Use &6/tpcancel <jogador>&e caso queira cancelar."
+Tpa-Here-Usage-Message: "&eUse: &6/tpahere <jogador>"
+No-Teleport-Requests: "&eVocê não tem nenhum teleporte pendente."
+Invalid-Player: "&cO jogador que estava se teleportando saiu do servidor."
+Teleport-Message-Back-To-Sender: "&6%player% &aaceitou seu pedido de teleporte."
+Teleported-Message: "&aTeleportado!"
+Move-Cancel-Message: "&cVocê se moveu e seu teleporte foi cancelado."
+Rejected-Sender: "&cSeu pedido foi recusado."
+Rejected-Message: "&eVocê recusou o pedido."
+Player-Is-In-Disabled-World: "&cEsse jogador está em mundo onde teleportes estão desabilitados."
+Tpcancel-Usage-Message: "&eUse: &6/tpcancel <jogador>"
+Error-Cancelling-Request: "&cVocê não pode cancelar seu próprio pedido"
+Request-Cancelled: "&eSeu pedido foi cancelado."
+
+## BUTTONS
+#Here you can find the colors https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
+
+#Accept Button Properties
+Accept-Button: "Aceitar"
+Accept-Button-Color: "GREEN"
+Accept-Button-Set-Bold: true
+Accept-Button-Description: "Clique para aceitar"
+
+#Middle Button Properties
+Middle-Button: " / "
+Middle-Button-Color: "YELLOW"
+Middle-Button-Set-Bold: true
+Middle-Button-Description: "<- | -> "
+
+#Deny Button Properties
+Deny-Button: "Recusar"
+Deny-Button-Color: "RED"
+Deny-Button-Set-Bold: true
+Deny-Button-Description: "Clique para recusar"
+
+#If you want to disable simpletpa for some worlds, then you can add them by adding - 'NameOfTheWorld'
+#Disabled Worlds:
 disabled-worlds:
-  - 'testworld'
+  - 'disabledworld'
+
+#If you set anything to true, you will disable it.
+#Booleans
+disable-prefix: true
+disable-back-command: true
+disable-accept-deny-buttons: false
+disable-particles: false
+disable-move-system: true
+# Everything works with SECONDS
+#Integers
+
+#This will delay the teleportation for X seconds
+delay-back-command: 0
+delay-teleportation: 0
+#Cooldowns
+back-cooldown: 0
+tpa-cooldown: 0
+tpahere-cooldown: 0
+tpahereall-cooldown: 0
+
+#This will keep the teleport request alive for X seconds
+keep-alive: 120
