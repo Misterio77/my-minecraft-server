@@ -1,7 +1,8 @@
-player_limit: 100
-ip_forward: true
-online_mode: false
 forge_support: true
+remote_ping_cache: -1
+custom_server_name: Bungee
+always_handle_packets: false
+player_limit: 100
 permissions:
   default:
   - changeskin.command.setskin
@@ -12,6 +13,13 @@ permissions:
   - changeskin.command.skininfo
   - bungeecord.command.server
   - bungeecord.command.list
+timeout: 30000
+log_commands: false
+network_compression_threshold: 256
+server_connect_timeout: 5000
+online_mode: false
+disabled_commands:
+- disabledcommandhere
 servers:
   lobby:
     motd: '&eMinecraft da Informação'
@@ -48,6 +56,17 @@ listeners:
   - modpack
   tab_size: 70
   force_default_server: true
+  forced_hosts:
+    pvp.md-5.net: pvp
+  bind_local_address: true
+  proxy_protocol: false
+ip_forward: true
+remote_ping_timeout: 5000
+prevent_proxy_connections: false
+groups:
+  md_5:
+  - admin
+connection_throttle: 4000
 stats: 391205fd-94fa-4840-b4be-c87cbd7f857f
 connection_throttle_limit: 5
 log_pings: false
