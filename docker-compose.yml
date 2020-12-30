@@ -10,7 +10,7 @@ services:
     environment:
       TYPE: CUSTOM
       BUNGEE_JAR_URL: >-
-        https://github.com/HexagonMC/BungeeCord/releases/download/v268/BungeeCord.jar
+        https://github.com/HexagonMC/BungeeCord/releases/download/v271/BungeeCord.jar
       REPLACE_ENV_VARIABLES: 'TRUE'
       ENV_VARIABLE_PREFIX: CFG_
       CFG_DB_HOST: database
@@ -75,7 +75,7 @@ services:
       ENABLE_AUTOPAUSE: 'TRUE'
       AUTOPAUSE_TIMEOUT_EST: '120'
       AUTOPAUSE_TIMEOUT_INIT: '120'
-      AUTOPAUSE_TIMEOUT_KN: '60'
+      AUTOPAUSE_TIMEOUT_KN: '10'
       MAX_TICK_TIME: '-1'
       COPY_CONFIG_DEST: /data
       OVERRIDE_SERVER_PROPERTIES: 'TRUE'
@@ -121,11 +121,11 @@ services:
       TYPE: CUSTOM
       VERSION: 1.12.2
       CUSTOM_SERVER: >-
-        https://github.com/magmafoundation/Magma/releases/download/v1656508/Magma-1656508-server.jar
+        https://github.com/magmafoundation/Magma/releases/download/v46f4149/Magma-46f4149-server.jar
       ENABLE_AUTOPAUSE: 'TRUE'
       AUTOPAUSE_TIMEOUT_EST: '120'
       AUTOPAUSE_TIMEOUT_INIT: '600'
-      AUTOPAUSE_TIMEOUT_KN: '60'
+      AUTOPAUSE_TIMEOUT_KN: '10'
       MAX_TICK_TIME: '6000000'
       COPY_CONFIG_DEST: /data
       OVERRIDE_SERVER_PROPERTIES: 'TRUE'
@@ -171,11 +171,11 @@ services:
       TYPE: CUSTOM
       VERSION: 1.12.2
       CUSTOM_SERVER: >-
-        https://github.com/magmafoundation/Magma/releases/download/v1656508/Magma-1656508-server.jar
+        https://github.com/magmafoundation/Magma/releases/download/v46f4149/Magma-46f4149-server.jar
       ENABLE_AUTOPAUSE: 'TRUE'
       AUTOPAUSE_TIMEOUT_EST: '120'
       AUTOPAUSE_TIMEOUT_INIT: '600'
-      AUTOPAUSE_TIMEOUT_KN: '60'
+      AUTOPAUSE_TIMEOUT_KN: '10'
       MAX_TICK_TIME: '6000000'
       COPY_CONFIG_DEST: /data
       OVERRIDE_SERVER_PROPERTIES: 'TRUE'
@@ -221,11 +221,11 @@ services:
       TYPE: CUSTOM
       VERSION: 1.12.2
       CUSTOM_SERVER: >-
-        https://github.com/magmafoundation/Magma/releases/download/v1656508/Magma-1656508-server.jar
+        https://github.com/magmafoundation/Magma/releases/download/v46f4149/Magma-46f4149-server.jar
       ENABLE_AUTOPAUSE: 'TRUE'
       AUTOPAUSE_TIMEOUT_EST: '120'
       AUTOPAUSE_TIMEOUT_INIT: '600'
-      AUTOPAUSE_TIMEOUT_KN: '60'
+      AUTOPAUSE_TIMEOUT_KN: '10'
       MAX_TICK_TIME: '6000000'
       COPY_CONFIG_DEST: /data
       OVERRIDE_SERVER_PROPERTIES: 'TRUE'

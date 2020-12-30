@@ -20,3 +20,7 @@ debug: false
 expansions:
   bungee:
     check_interval: 30
+  pinger:
+    offline: '&cOffline'
+    check_interval: 300
+    online: '&aOnline'

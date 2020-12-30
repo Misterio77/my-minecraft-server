@@ -41,6 +41,10 @@ servers:
     motd: '&eMinecraft da Informação &7 - &bModpack E2ES'
     address: modpack-e2es
     restricted: false
+  modpack-e2:
+    motd: '&eMinecraft da Informação &7 - &bModpack E2'
+    address: modpack-e2
+    restricted: false
 listeners:
 - max_players: 100
   host: 0.0.0.0:25577
