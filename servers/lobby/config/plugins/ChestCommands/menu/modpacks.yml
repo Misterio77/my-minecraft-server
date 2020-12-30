@@ -1,0 +1,27 @@
+menu-settings:
+  name: 'Outros Modpacks'
+  rows: 1
+  commands:
+  - 'modpacks'
+  auto-refresh: 20
+
+e2es:
+  MATERIAL: oak sapling
+  POSITION-X: 1
+  POSITION-Y: 1
+  NAME: 'Enigmatica 2: Expert Skyblock'
+  LORE:
+    - '%pinger_online_modpack-e2es%'
+    - '%bungee_survival% jogador(es)'
+  ACTIONS:
+    - 'server: modpack-e2es'
+e2:
+  MATERIAL: ender pearl
+  POSITION-X: 2
+  POSITION-Y: 1
+  NAME: 'Enigmatica 2'
+  LORE:
+    - '%pinger_online_modpack-e2%'
+    - '%bungee_survival% jogador(es)'
+  ACTIONS:
+    - 'server: modpack-e2'

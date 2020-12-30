@@ -85,26 +85,12 @@ items:
         - 'Se tiver qualquer dúvida, fique à vontade para chamar qualquer jogador ou dê um toque no nosso Discord.'
         - ''
         - 'Beijos &4<3'
-#  server-criativo:
-#    id: TOTEM_OF_UNDYING
-#    name: '&eServidor Criativo'
-#    lore:
-#       - '&7Em breve'
-#    slot: 1
-#    limit-modes: ADVENTURE
-#    triggers: join, respawn, gamemode-switch
-#    commands:
-#      interact:
-#        - 'server: criativo'
-#      inventory:
-#        - 'server: criativo'
   server-modpack:
     id: BLAZE_ROD
-    name: '&eServidor Modpack'
+    name: '&eModpack BSI'
     lore:
-       - '&7Clique p/ conectar ao servidor &eModpack'
-       - '&7Esse servidor está na 1.12, e requer mods'
-       - '&7Consulte o livro ou o discord para info'
+       - '%pinger_online_modpack%'
+       - '&7%bungee_modpack% jogador(es)'
     slot: 2
     limit-modes: ADVENTURE
     triggers: join, respawn, gamemode-switch
@@ -115,10 +101,11 @@ items:
         - 'server: modpack'
   server-survival:
     id: IRON_PICKAXE
-    name: '&eServidor Survival'
+    name: '&eSurvival'
     lore:
-       - '&7Clique p/ conectar ao servidor &eSurvival'
-    slot: 1
+       - '%pinger_online_survival%'
+       - '&7%bungee_survival% jogador(es)'
+    slot: 3
     limit-modes: ADVENTURE
     triggers: join, respawn, gamemode-switch
     commands:
@@ -127,32 +114,48 @@ items:
       inventory:
         - 'server: survival'
     itemflags: hide-attributes
-#  server-skyblock:
-#    id: OAK_SAPLING
-#    name: '&eServidor Skyblock'
-#    lore:
-#       - '&7Clique p/ conectar ao servidor &eSkyblock'
-#    slot: 4
-#    limit-modes: ADVENTURE
-#    triggers: join, respawn, gamemode-switch
-#    commands:
-#      interact:
-#        - 'server: skyblock'
-#      inventory:
-#        - 'server: skyblock'
-#    itemflags: hide-attributes
-#  server-factions:
-#    id: DIAMOND_SWORD
-#    name: '&eServidor Factions'
-#    lore:
-#       - '&7Clique p/ conectar ao servidor &eFactions'
-#    slot: 5
-#    limit-modes: ADVENTURE
-#    triggers: join, respawn, gamemode-switch
-#    commands:
-#      interact:
-#        - 'server: factions'
-#      inventory:
-#        - 'server: factions'
-#    itemflags: hide-attributes
-
+  server-skyblock:
+    id: OAK_SAPLING
+    name: '&eSkyblock'
+    lore:
+       - '%pinger_online_skyblock%'
+       - '&7%bungee_skyblock% jogador(es)'
+    slot: 4
+    limit-modes: ADVENTURE
+    triggers: join, respawn, gamemode-switch
+    commands:
+      interact:
+        - 'server: skyblock'
+      inventory:
+        - 'server: skyblock'
+    itemflags: hide-attributes
+  server-factions:
+    id: DIAMOND_SWORD
+    name: '&eFactions'
+    lore:
+       - '%pinger_online_factions%'
+       - '&7%bungee_factions% jogador(es)'
+    slot: 5
+    limit-modes: ADVENTURE
+    triggers: join, respawn, gamemode-switch
+    commands:
+      interact:
+        - 'server: factions'
+      inventory:
+        - 'server: factions'
+    itemflags: hide-attributes
+  server-modpacks:
+    id: IRON_INGOT
+    name: '&eOutros Modpacks'
+    lore:
+       - '&bListar'
+       - '&7%math_{bungee_modpack-e2}+{bungee_modpack-e2es}[precision:0]% jogador(es)'
+    slot: 1
+    limit-modes: ADVENTURE
+    triggers: join, respawn, gamemode-switch
+    commands:
+      interact:
+        - 'player: modpacks'
+      inventory:
+        - 'player: modpacks'
+    itemflags: hide-attributes

@@ -11,13 +11,13 @@ npc:
     uuid: 2e0bc2eb-2816-4564-875a-4d3d8eac7883
     traits:
       location:
-        bodyYaw: -190
+        bodyYaw: -115.50169
         world: lobby
         x: '-2.5'
         y: '107.5'
         z: '9.5'
-        yaw: '-180'
-        pitch: '0'
+        yaw: '-115.5017'
+        pitch: '9.4432'
       spawned: true
       lookclose:
         range: '5.0'
@@ -54,7 +54,7 @@ npc:
       owner:
         owner: Misterio7
         uuid: d31f1073-e16f-3a68-ade6-f9168fc081b3
-    traitnames: location,spawned,mounttrait,owner,inventory,lookclose,type,skintrait,equipment,commandtrait,scoreboardtrait
+    traitnames: mounttrait,lookclose,location,skintrait,inventory,scoreboardtrait,owner,commandtrait,spawned,type,equipment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -68,13 +68,13 @@ npc:
     uuid: 0533652f-cb69-424b-b1f9-dfaabd4659e6
     traits:
       location:
-        bodyYaw: -190
+        bodyYaw: -105.34903
         world: lobby
         x: '0.5'
         y: '107.0'
         z: '9.5'
-        yaw: '-180'
-        pitch: '0'
+        yaw: '-105.349'
+        pitch: '0.0'
       spawned: true
       lookclose:
         range: '5.0'
@@ -111,7 +111,7 @@ npc:
       owner:
         owner: Misterio7
         uuid: d31f1073-e16f-3a68-ade6-f9168fc081b3
-    traitnames: location,spawned,mounttrait,owner,inventory,lookclose,type,skintrait,commandtrait,equipment,scoreboardtrait
+    traitnames: mounttrait,lookclose,location,skintrait,inventory,scoreboardtrait,owner,commandtrait,spawned,type,equipment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -133,13 +133,13 @@ npc:
         textureRaw: eyJ0aW1lc3RhbXAiOjE1ODI4MzY0OTczNjcsInByb2ZpbGVJZCI6ImJlY2RkYjI4YTJjODQ5YjRhOWIwOTIyYTU4MDUxNDIwIiwicHJvZmlsZU5hbWUiOiJTdFR2Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS80YWFlZTY4ZDNiNDk4ZWI3NTNmNzUzNDU4MTI0OTU4ZjE3YTg5NzcwM2EyM2Q4N2ViYTNkMzQ3MWE1ODU0NTQ0In19fQ==
         updateSkins: false
       location:
-        bodyYaw: -190
+        bodyYaw: -190.0
         world: lobby
         x: '-5.5'
         y: '107.5'
         z: '9.5'
-        yaw: '-180'
-        pitch: '0'
+        yaw: '-180.0'
+        pitch: '0.0'
       lookclose:
         range: '5.0'
         enabled: true
@@ -168,7 +168,7 @@ npc:
       owner:
         owner: Misterio7
         uuid: d31f1073-e16f-3a68-ade6-f9168fc081b3
-    traitnames: location,spawned,mounttrait,owner,inventory,lookclose,type,skintrait,commandtrait,equipment,scoreboardtrait
+    traitnames: mounttrait,lookclose,location,skintrait,inventory,scoreboardtrait,owner,commandtrait,spawned,type,equipment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -198,13 +198,13 @@ npc:
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTU5NDI1OTI3NDc5MywKICAicHJvZmlsZUlkIiA6ICJmNWQwYjFhZTQxNmU0YTE5ODEyMTRmZGQzMWU3MzA1YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJDYXRjaFRoZVdhdmUxMCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS85ODVhNWNmOTIzNzk0NGNiMGQ1NWEzYWNkMmIxOGFjM2MwNTI3YmEyMDM4NDc1MzkyZTRiODdiZGZlYmU5YTY2IgogICAgfQogIH0KfQ==
         updateSkins: false
       location:
-        bodyYaw: -190
+        bodyYaw: -190.0
         world: world
         x: '6.5'
         y: '107.5'
         z: '9.5'
-        yaw: '-180'
-        pitch: '0'
+        yaw: '-180.0'
+        pitch: '0.0'
       lookclose:
         range: '5.0'
         enabled: true
@@ -233,7 +233,7 @@ npc:
       owner:
         owner: Misterio7
         uuid: d31f1073-e16f-3a68-ade6-f9168fc081b3
-    traitnames: location,spawned,mounttrait,owner,inventory,lookclose,type,skintrait,skinlayers,equipment,commandtrait,scoreboardtrait
+    traitnames: mounttrait,lookclose,location,skintrait,skinlayers,inventory,scoreboardtrait,owner,commandtrait,spawned,type,equipment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -253,13 +253,13 @@ npc:
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYwMzE1OTc3MDE4NSwKICAicHJvZmlsZUlkIiA6ICJmMjc0YzRkNjI1MDQ0ZTQxOGVmYmYwNmM3NWIyMDIxMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJIeXBpZ3NlbCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9lYzJiYmQwMTE1MmE5NTBlZDE4ODc3YWJiOWNhNWJiMmFhZmE2MDFmZTJkZTEyNTFhMzRjOTlmYTg3ZDRkZmMxIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=
         updateSkins: false
       location:
-        bodyYaw: -190
+        bodyYaw: -112.19884
         world: lobby
         x: '3.5'
         y: '107.5'
         z: '9.5'
-        yaw: '-180'
-        pitch: '0'
+        yaw: '-112.1988'
+        pitch: '8.8988'
       lookclose:
         range: '5.0'
         enabled: true
@@ -290,7 +290,7 @@ npc:
       owner:
         owner: Misterio7x
         uuid: b094c46b-90d6-385a-96d9-5e740ed98070
-    traitnames: location,spawned,mounttrait,owner,inventory,lookclose,type,skintrait,commandtrait,equipment,scoreboardtrait
+    traitnames: mounttrait,lookclose,location,skintrait,inventory,scoreboardtrait,owner,commandtrait,spawned,type,equipment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -303,29 +303,26 @@ npc:
     uuid: fbaab35e-6e44-4b71-9323-87d1e9a6f555
     traits:
       location:
-        bodyYaw: -190
+        bodyYaw: 177.94641
         world: lobby
         x: '6.5'
         y: '107.5'
         z: '9.5'
-        yaw: '-180'
-        pitch: '0'
+        yaw: '177.9464'
+        pitch: '22.4964'
       spawned: true
-      owner:
-        owner: Misterio7x
-        uuid: b094c46b-90d6-385a-96d9-5e740ed98070
       lookclose:
         range: '5.0'
         enabled: true
         enableRandomLook: false
         randomLookDelay: 60
+        realisticlooking: false
         randomPitchRange:
           '0': -10.0
           '1': 0.0
         randomYawRange:
           '0': 0.0
           '1': 360.0
-        realisticlooking: false
       type: PLAYER
       skintrait:
         fetchDefaultSkin: true
@@ -333,7 +330,23 @@ npc:
         skinName: 67ccd45e-0117-4956-8232-3f9b7b2f3cee
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYwOTMzNzU5MTczNCwKICAicHJvZmlsZUlkIiA6ICJjZGM5MzQ0NDAzODM0ZDdkYmRmOWUyMmVjZmM5MzBiZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJSYXdMb2JzdGVycyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9jNzUwNTQ3Njg4ZWQxODQ5MGMwNjZjNDE2NjJjMDY2N2U0M2FlM2M4ZDdhOGRlNGNhZWRhMzA2ZWQ3MmVkYjY4IgogICAgfQogIH0KfQ==
         updateSkins: false
-    traitnames: location,spawned,mounttrait,owner,inventory,lookclose,type,skintrait,equipment,scoreboardtrait
+      owner:
+        owner: Misterio7x
+        uuid: b094c46b-90d6-385a-96d9-5e740ed98070
+      commandtrait:
+        commands:
+          '0':
+            command: modpacks
+            hand: RIGHT
+            player: true
+            op: false
+            cooldown: 0
+            globalcooldown: 0
+            n: -1
+            delay: 0
+        cost: -1.0
+        executionMode: LINEAR
+    traitnames: mounttrait,lookclose,location,skintrait,inventory,scoreboardtrait,owner,commandtrait,spawned,type,equipment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
