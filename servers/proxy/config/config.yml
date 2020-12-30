@@ -30,8 +30,12 @@ servers:
     address: survival
     restricted: false
   skyblock:
-    motd: '&eMinecraft da Informação &7 - &bskyblock'
+    motd: '&eMinecraft da Informação &7 - &bSkyblock'
     address: skyblock
+    restricted: false
+  factions:
+    motd: '&eMinecraft da Informação &7 - &bFactions'
+    address: factions
     restricted: false
   modpack:
     motd: '&eMinecraft da Informação &7 - &bModpack'

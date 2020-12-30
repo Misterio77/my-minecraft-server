@@ -23,4 +23,7 @@ expansions:
   pinger:
     offline: '&cOffline'
     check_interval: 300
-    online: '&aOnline'
+    online: '&aConectar'
+  math:
+    Precision: 3
+    Debug: 'off'
