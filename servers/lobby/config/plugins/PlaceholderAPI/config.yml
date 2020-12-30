@@ -22,7 +22,7 @@ expansions:
     check_interval: 30
   pinger:
     offline: '&cOffline'
-    check_interval: 300
+    check_interval: 1200
     online: '&aConectar'
   math:
     Precision: 3
