@@ -12,16 +12,16 @@ e2es:
   NAME: 'Enigmatica 2: Expert Skyblock'
   LORE:
     - '%pinger_online_modpack-e2es%'
-    - '%bungee_survival% jogador(es)'
+    - '%bungee_modpack-e2es% jogador(es)'
   ACTIONS:
     - 'server: modpack-e2es'
-e2:
+atm3:
   MATERIAL: ender pearl
   POSITION-X: 2
   POSITION-Y: 1
-  NAME: 'Enigmatica 2'
+  NAME: 'All The Mods 3'
   LORE:
-    - '%pinger_online_modpack-e2%'
-    - '%bungee_survival% jogador(es)'
+    - '%pinger_online_modpack-atm3%'
+    - '%bungee_modpack-atm3% jogador(es)'
   ACTIONS:
-    - 'server: modpack-e2'
+    - 'server: modpack-atm3'

@@ -1,4 +1,4 @@
-server: survival
+server: ${CFG_SERVER_NAME}
 use-server-uuid-cache: false
 storage-method: mariadb
 data:

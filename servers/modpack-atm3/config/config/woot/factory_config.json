@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "mobconfigs": [
+    {
+      "mobName": "minecraft:ender_dragon",
+      "configs": [
+        {
+          "tag": "death_xp",
+          "value": 500
+        },
+        {
+          "tag": "spawn_units",
+          "value": 7500
+        },
+        {
+          "tag": "factory_tier",
+          "value": 4
+        },
+        {
+          "tag": "spawn_ticks",
+          "value": 120000
+        },
+        {
+          "tag": "mass_1_param",
+          "value": 2
+        },
+        {
+          "tag": "mass_2_param",
+          "value": 3
+        },
+        {
+          "tag": "mass_3_param",
+          "value": 4
+        },
+        {
+          "tag": "mass_fx",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "mobName": "draconicevolution:chaosguardian",
+      "configs": [
+        {
+          "tag": "death_xp",
+          "value": 5000
+        },
+        {
+          "tag": "spawn_units",
+          "value": 1700000
+        },
+        {
+          "tag": "factory_tier",
+          "value": 4
+        },
+        {
+          "tag": "spawn_ticks",
+          "value": 144000
+        },
+        {
+          "tag": "mass_1_param",
+          "value": 2
+        },
+        {
+          "tag": "mass_2_param",
+          "value": 3
+        },
+        {
+          "tag": "mass_3_param",
+          "value": 4
+        },
+        {
+          "tag": "mass_fx",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "mobName": "minecraft:wither",
+      "configs": [
+        {
+          "tag": "factory_tier",
+          "value": 4
+        },
+        {
+          "tag": "spawn_units",
+          "value": 104
+        },
+        {
+          "tag": "spawn_ticks",
+          "value": 400
+        },
+        {
+          "tag": "mass_1_param",
+          "value": 2
+        },
+        {
+          "tag": "mass_2_param",
+          "value": 3
+        },
+        {
+          "tag": "mass_3_param",
+          "value": 4
+        },
+        {
+          "tag": "mass_fx",
+          "value": 4
+        }
+      ]
+    }
+  ],
+  "entitymodblacklist": [
+    "botania"
+  ],
+  "entityblacklist": [
+    "minecraft:evocation_illager",
+    "twilightforest:naga",
+    "twilightforest:minoshroom",
+    "twilightforest:hydra",
+    "twilightforest:ur_ghast",
+    "twilightforest:yeti_alpha",
+    "twilightforest:snow_queen",
+    "twilightforest:giant_miner",
+    "twilightforest:armored_giant",
+	"thaumcraft:cultistportalgreater",
+	"thaumcraft:cultistportallesser",
+	"thaumcraft:eldritchwarden",
+	"thaumcraft:eldritchgolem"
+  ],
+  "entitywhitelist": [
+  ],
+  "itemmodblacklist": [ 
+	"ebwizardry"
+  ],
+  "itemblacklist": [  ]
+}
+

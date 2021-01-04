@@ -8,6 +8,7 @@ services:
       - '25565:25577/udp'
       - '19132:19132/udp'
     environment:
+      TZ: America/Sao_Paulo
       TYPE: CUSTOM
       BUNGEE_JAR_URL: >-
         https://github.com/HexagonMC/BungeeCord/releases/download/v271/BungeeCord.jar
@@ -25,6 +26,9 @@ services:
     volumes:
       - './worlds/lobby:/data/lobby'
     environment:
+      TZ: America/Sao_Paulo
+      UID: 1001
+      GID: 1001 
       TYPE: PAPER
       ENABLE_AUTOPAUSE: 'FALSE'
       MAX_TICK_TIME: '-1'
@@ -71,6 +75,9 @@ services:
       - './worlds/survival/world_nether:/data/world_nether'
       - './worlds/survival/world_the_end:/data/world_the_end'
     environment:
+      TZ: America/Sao_Paulo
+      UID: 1001
+      GID: 1001 
       TYPE: PAPER
       ENABLE_AUTOPAUSE: 'TRUE'
       AUTOPAUSE_TIMEOUT_EST: '120'
@@ -118,10 +125,13 @@ services:
     volumes:
       - './worlds/modpack:/data/world'
     environment:
+      TZ: America/Sao_Paulo
+      UID: 1001
+      GID: 1001 
       TYPE: CUSTOM
       VERSION: 1.12.2
       CUSTOM_SERVER: >-
-        https://github.com/magmafoundation/Magma/releases/download/v46f4149/Magma-46f4149-server.jar
+        https://github.com/magmafoundation/Magma/releases/download/vbb50f45/Magma-bb50f45-server.jar
       ENABLE_AUTOPAUSE: 'TRUE'
       AUTOPAUSE_TIMEOUT_EST: '120'
       AUTOPAUSE_TIMEOUT_INIT: '600'
@@ -168,10 +178,13 @@ services:
     volumes:
       - './worlds/modpack-e2es:/data/world'
     environment:
+      TZ: America/Sao_Paulo
+      UID: 1001
+      GID: 1001 
       TYPE: CUSTOM
       VERSION: 1.12.2
       CUSTOM_SERVER: >-
-        https://github.com/magmafoundation/Magma/releases/download/v46f4149/Magma-46f4149-server.jar
+        https://github.com/magmafoundation/Magma/releases/download/vbb50f45/Magma-bb50f45-server.jar
       ENABLE_AUTOPAUSE: 'TRUE'
       AUTOPAUSE_TIMEOUT_EST: '120'
       AUTOPAUSE_TIMEOUT_INIT: '600'
@@ -211,17 +224,20 @@ services:
       CFG_DB_NAME: '${DB_NAME}'
       CFG_DB_USERNAME: '${DB_USERNAME}'
       CFG_DB_PASSWORD: '${DB_PASSWORD}'
-  modpack-e2:
-    build: ./servers/modpack-e2
+  modpack-atm3:
+    build: ./servers/modpack-atm3
     stdin_open: true
     tty: true
     volumes:
-      - './worlds/modpack-e2:/data/world'
+      - './worlds/modpack-atm3:/data/world'
     environment:
+      TZ: America/Sao_Paulo
+      UID: 1001
+      GID: 1001 
       TYPE: CUSTOM
       VERSION: 1.12.2
       CUSTOM_SERVER: >-
-        https://github.com/magmafoundation/Magma/releases/download/v46f4149/Magma-46f4149-server.jar
+        https://github.com/magmafoundation/Magma/releases/download/vbb50f45/Magma-bb50f45-server.jar
       ENABLE_AUTOPAUSE: 'TRUE'
       AUTOPAUSE_TIMEOUT_EST: '120'
       AUTOPAUSE_TIMEOUT_INIT: '600'
@@ -239,7 +255,7 @@ services:
       DIFFICULTY: normal
       MODE: survival
       PVP: 'true'
-      SERVER_NAME: modpack-e2
+      SERVER_NAME: modpack-atm3
       LEVEL: world
       ALLOW_NETHER: 'true'
       SPAWN_ANIMALS: 'true'
@@ -255,7 +271,7 @@ services:
       REPLACE_ENV_VARIABLES: 'TRUE'
       ENV_VARIABLE_PREFIX: CFG_
       CFG_BUKKIT_ALLOW_END: 'true'
-      CFG_SERVER_NAME: modpack-e2
+      CFG_SERVER_NAME: modpack-atm3
       CFG_DB_HOST: database
       CFG_DB_PORT: '3306'
       CFG_DB_NAME: '${DB_NAME}'
@@ -266,6 +282,7 @@ services:
     volumes:
       - './database:/var/lib/mysql'
     environment:
+      TZ: America/Sao_Paulo
       MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
       MYSQL_DATABASE: '${DB_NAME}'
       MYSQL_USER: '${DB_USERNAME}'
