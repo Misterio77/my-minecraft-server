@@ -6,9 +6,9 @@ DataSource:
     # or when a website integration is being used.
     caching: false
     # Database host address
-    mySQLHost: database
+    mySQLHost: ${CFG_DB_HOST}
     # Database port
-    mySQLPort: 3306
+    mySQLPort: ${CFG_DB_PORT}
     # Connect to MySQL database over SSL
     mySQLUseSSL: false
     # Verification of server's certificate.
@@ -16,11 +16,11 @@ DataSource:
     # Set this option to false at your own risk if and only if you know what you're doing
     mySQLCheckServerCertificate: true
     # Username to connect to the MySQL database
-    mySQLUsername: minecraft
+    mySQLUsername: ${CFG_DB_USERNAME}
     # Password to connect to the MySQL database
-    mySQLPassword: beirute1609
+    mySQLPassword: ${CFG_DB_PASSWORD}
     # Database Name, use with converters or as SQLITE database name
-    mySQLDatabase: minecraft
+    mySQLDatabase: ${CFG_DB_NAME}
     # Table of the database
     mySQLTablename: authme
     # Column of IDs to sort data

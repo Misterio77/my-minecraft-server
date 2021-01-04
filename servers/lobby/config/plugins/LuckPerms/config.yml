@@ -2,10 +2,10 @@ server: ${CFG_SERVER_NAME}
 use-server-uuid-cache: false
 storage-method: mariadb
 data:
-  address: database
-  database: minecraft
-  username: minecraft
-  password: beirute1609
+  address: ${CFG_DB_HOST}
+  database: ${CFG_DB_NAME}
+  username: ${CFG_DB_USERNAME}
+  password: ${CFG_DB_PASSWORD}
   pool-settings:
     maximum-pool-size: 10
     minimum-idle: 10

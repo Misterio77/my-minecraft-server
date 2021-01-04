@@ -10,9 +10,9 @@ bukkit-permissions: false
 auto-skin-update: -1
 storage:
     driver: com.mysql.jdbc.Driver
-    host: database
-    port: 3306
-    database: minecraft
-    username: minecraft
-    password: beirute1609
+    host: ${CFG_DB_HOST}
+    port: ${CFG_DB_PORT}
+    database: ${CFG_DB_NAME}
+    username: ${CFG_DB_USERNAME}
+    password: ${CFG_DB_PASSWORD}
 proxies:

@@ -27,10 +27,10 @@ optional:
 database:
     adapter: mysql
     path: plugins/LWC/lwc.db
-    host: database
-    database: minecraft
-    username: minecraft
-    password: beirute1609
+    host: ${CFG_DB_HOST}
+    database: ${CFG_DB_NAME}
+    username: ${CFG_DB_USERNAME}
+    password: ${CFG_DB_PASSWORD}
     prefix: lwc_
     ping_interval: 300
 protections:
