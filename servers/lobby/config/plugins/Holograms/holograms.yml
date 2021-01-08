@@ -18,7 +18,7 @@ holograms:
   skyblock:
     location: lobby;-2.5;110.0;9.5;0.0;180.0
     lines:
-    - §e§lSkyblock §7(1.16)
+    - §e§lSkyblock
     - '%pinger_online_skyblock% §7%pinger_version_skyblock%'
     - §7%bungee_skyblock% jogador(es)
   criativo:
@@ -30,19 +30,19 @@ holograms:
   factions:
     location: lobby;-5.5;110.0;9.5;0.0;180.0
     lines:
-    - §e§lFactions §7(1.16)
+    - §e§lFactions
     - '%pinger_online_factions% §7%pinger_version_factions%'
     - §7%bungee_factions% jogador(es)
   survival:
     location: lobby;0.5;109.5;9.5;0.0;180.0
     lines:
-    - §e§lSurvival §7(1.16)
+    - §e§lSurvival
     - '%pinger_online_survival%'
     - §7%bungee_survival% jogador(es)
   modpack:
     location: lobby;3.5;110.0;9.5;0.0;180.0
     lines:
-    - §e§lModpack BSI §7(1.12)
+    - §e§lModpack BSI
     - '%pinger_online_modpack% §7%pinger_version_modpack%'
     - §7%bungee_modpack% jogador(es)
   modpack_outros:

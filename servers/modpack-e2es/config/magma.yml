@@ -15,13 +15,13 @@ fakeplayer:
   permissions: []
 magma:
   advanced:
-    override-brand: false
-    override-brand-name: Spigot
+    override-brand: true
+    override-brand-name: Magma
     server-type: FML
   messages:
     fml:
       fml-required: '&cEste servidor inclui mods. Use a versão correta e instale o forge antes de continuar.'
       missing-mods: '&cVocê precisa instalar os seguintes mods para continuar:'
-  auto-update: true
+  auto-update: false
 experience-merge-max-value: -1
 config-version: 2
