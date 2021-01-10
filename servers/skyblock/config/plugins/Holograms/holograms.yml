@@ -1,0 +1,8 @@
+holograms:
+  skyblock:
+    location: sblobby;0.5;66.5;4.5;0.0;0.0
+    lines:
+    - §eSkyblock
+    - Use §e/island§r para começar
+    - Veja §e/island help§r para mais comandos
+    - Caso queira retornar aqui, use §e/spawn

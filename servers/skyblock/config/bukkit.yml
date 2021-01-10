@@ -13,7 +13,7 @@
 
 
 settings:
-  allow-end: true
+  allow-end: false
   warn-on-overload: true
   permissions-file: permissions.yml
   update-folder: update
@@ -41,4 +41,6 @@ ticks-per:
 aliases: now-in-commands.yml
 worlds:
   lobby:
+    generator: VoidGenerator
+  sblobby:
     generator: VoidGenerator

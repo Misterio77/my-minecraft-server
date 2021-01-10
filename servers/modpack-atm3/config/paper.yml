@@ -80,7 +80,7 @@ world-settings:
     delay-chunk-unloads-by: 10s
     optimize-explosions: false
     baby-zombie-movement-modifier: 0.5
-    disable-teleportation-suffocation-check: false
+    disable-teleportation-suffocation-check: true
     fixed-chunk-inhabited-time: -1
     use-vanilla-world-scoreboard-name-coloring: false
     remove-corrupt-tile-entities: false

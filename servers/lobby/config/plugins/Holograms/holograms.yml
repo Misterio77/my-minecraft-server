@@ -37,7 +37,7 @@ holograms:
     location: lobby;0.5;109.5;9.5;0.0;180.0
     lines:
     - §e§lSurvival
-    - '%pinger_online_survival%'
+    - '%pinger_online_survival% §7%pinger_version_survival%'
     - §7%bungee_survival% jogador(es)
   modpack:
     location: lobby;3.5;110.0;9.5;0.0;180.0

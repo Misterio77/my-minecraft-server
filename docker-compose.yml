@@ -39,7 +39,7 @@ services:
       ONLINE_MODE: 'FALSE'
       MAX_PLAYERS: '50'
       EULA: 'TRUE'
-      OPS: misterio8x
+      OPS: 'misterio'
       MEMORY: 1G
       DIFFICULTY: peaceful
       MODE: adventure
@@ -91,7 +91,7 @@ services:
       ONLINE_MODE: 'FALSE'
       MAX_PLAYERS: '50'
       EULA: 'TRUE'
-      OPS: misterio8x
+      OPS: 'misterio'
       MEMORY: 2G
       DIFFICULTY: normal
       MODE: survival
@@ -113,6 +113,59 @@ services:
       ENV_VARIABLE_PREFIX: CFG_
       CFG_BUKKIT_ALLOW_END: 'true'
       CFG_SERVER_NAME: survival
+      CFG_DB_HOST: database
+      CFG_DB_PORT: '3306'
+      CFG_DB_NAME: '${DB_NAME}'
+      CFG_DB_USERNAME: '${DB_USERNAME}'
+      CFG_DB_PASSWORD: '${DB_PASSWORD}'
+  skyblock:
+    build: ./servers/skyblock
+    stdin_open: true
+    tty: true
+    volumes:
+      - './worlds/skyblock/sblobby:/data/sblobby'
+      - './worlds/skyblock/bskyblock_world:/data/bskyblock_world'
+      - './worlds/skyblock/bskyblock_world_nether:/data/bskyblock_world_nether'
+      - './worlds/skyblock/bskyblock_world_the_end:/data/bskyblock_world_the_end'
+    environment:
+      TZ: America/Sao_Paulo
+      UID: 1001
+      GID: 1001 
+      TYPE: PAPER
+      ENABLE_AUTOPAUSE: 'TRUE'
+      AUTOPAUSE_TIMEOUT_EST: '120'
+      AUTOPAUSE_TIMEOUT_INIT: '120'
+      AUTOPAUSE_TIMEOUT_KN: '10'
+      MAX_TICK_TIME: '-1'
+      COPY_CONFIG_DEST: /data
+      OVERRIDE_SERVER_PROPERTIES: 'TRUE'
+      REMOVE_OLD_MODS: 'TRUE'
+      USE_AIKAR_FLAGS: 'true'
+      ONLINE_MODE: 'FALSE'
+      MAX_PLAYERS: '50'
+      EULA: 'TRUE'
+      OPS: 'misterio'
+      MEMORY: 2G
+      DIFFICULTY: normal
+      MODE: survival
+      PVP: 'true'
+      SERVER_NAME: skyblock
+      LEVEL: sblobby
+      ALLOW_NETHER: 'false'
+      SPAWN_ANIMALS: 'true'
+      SPAWN_MONSTERS: 'true'
+      SPAWN_NPCS: 'true'
+      SPAWN_PROTECTION: '10'
+      VIEW_DISTANCE: '10'
+      LEVEL_TYPE: default
+      ALLOW_FLIGHT: 'true'
+      FORCE_GAMEMODE: 'true'
+      ENABLE_COMMAND_BLOCK: 'false'
+      GENERATE_STRUCTURES: 'true'
+      REPLACE_ENV_VARIABLES: 'TRUE'
+      ENV_VARIABLE_PREFIX: CFG_
+      CFG_BUKKIT_ALLOW_END: 'false'
+      CFG_SERVER_NAME: skyblock
       CFG_DB_HOST: database
       CFG_DB_PORT: '3306'
       CFG_DB_NAME: '${DB_NAME}'
@@ -144,7 +197,7 @@ services:
       ONLINE_MODE: 'FALSE'
       MAX_PLAYERS: '50'
       EULA: 'TRUE'
-      OPS: misterio8x
+      OPS: 'misterio'
       MEMORY: 4G
       DIFFICULTY: normal
       MODE: survival
@@ -197,7 +250,7 @@ services:
       ONLINE_MODE: 'FALSE'
       MAX_PLAYERS: '50'
       EULA: 'TRUE'
-      OPS: misterio8x
+      OPS: 'misterio'
       MEMORY: 4G
       DIFFICULTY: normal
       MODE: survival
@@ -250,7 +303,7 @@ services:
       ONLINE_MODE: 'FALSE'
       MAX_PLAYERS: '50'
       EULA: 'TRUE'
-      OPS: misterio8x
+      OPS: 'misterio'
       MEMORY: 4G
       DIFFICULTY: normal
       MODE: survival

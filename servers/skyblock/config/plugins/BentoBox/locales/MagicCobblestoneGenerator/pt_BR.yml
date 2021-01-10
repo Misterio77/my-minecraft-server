@@ -1,0 +1,825 @@
+# 
+# Protection flags that are used in current addon.
+stone-generator:
+  commands:
+    admin:
+      main:
+        description: Comando de adminstrador do Magic Cobblestone Generator
+      import:
+        description: Importa geradores mágicos
+        confirmation: Isso irá remover todos os geradores de [gamemode] e importar
+          novos geradores do arquivo modelo - por favor confirme
+      why:
+        parameters: <jogador>
+        description: alterna mensagens de debug do Magic Cobblestone Generator
+      database:
+        description: Comando principal de database
+      import-database:
+        parameters: <arquivo>
+        description: importa arquivo de database para geradores mágicos
+        confirmation: Isso irá remover geradores existentes de [gamemode] e importar
+          geradores do arquivo de database - por favor confirme
+      export:
+        parameters: <arquivo>
+        description: Exporta a database de geradores mágicos do Modo de Jogo para um arquivo
+    player:
+      main:
+        description: abre interface seletora de geradores
+      view:
+        description: abre a interface de detalhes de geradores
+        parameters: <id-de-gerador>
+      buy:
+        description: Compra o gerador especificado
+        parameters: <id-de-gerador>
+      activate:
+        description: Ativa/desativa o gerador especificado
+        parameters: <id-de-gerador> <true/false>
+  gui:
+    titles:
+      player-panel: '&0&l Geradores'
+      view-generator: '&0&l Gerador: &r [generator]'
+      admin-panel: '&0&l Painel Administrativo'
+      select-biome: '&0&l Selecionar Biomas'
+      select-block: '&0&l Selecionar Bloco'
+      select-bundle: '&0&l Selecionar Conjunto'
+      select-type: '&0&l Selecione Tipo de Gerador'
+      view-bundle: '&0&l Conjunto: &r [bundle]'
+      manage-bundles: '&0&l Gerenciar Conjuntos'
+      manage-generators: '&0&l Gerenciar Geradores'
+      view-island: '&0&l Ilha: [island]'
+      manage-islands: '&0&l Gerenciar Dados da Ilha'
+      library: '&0&l Biblioteca'
+      settings: '&0&l Configurações'
+    buttons:
+      default:
+        name: '&f&l Gerador Padrão'
+        description: |-
+          &7 Geradores padrão estão sempre
+          &7 ativos.
+        enabled: '&b Esse &a é &b o gerador &a padrão &b .'
+        disabled: '&b Esse &c não é &b o gerador &c padrão &b .'
+      priority:
+        name: '&f&l Prioridade de Gerador'
+        description: |-
+          &7 Um número de prioridade
+          &7 maior terá preferência se
+          &7 múltiplos puderem estar
+          &7 aplicados na mesma localização.
+        value: '&b Prioridade: &7 [number]'
+      type:
+        name: '&f&l Tipo de Gerador'
+        description: |-
+          &7 Define que tipo de gerador
+          &7 será aplicado ao gerador
+          &7 atual.
+        value: '&b Tipo: &7 [type]'
+      required_min_level:
+        name: '&f&l Nível de Ilha Mínimo'
+        description: |-
+          &7 Nível de ilha mínimo para
+          &7 desbloquear este gerador.
+        value: '&b Nível Mínimo Nescessário: [number]'
+      required_permissions:
+        name: '&f&l Permissões Nescessárias'
+        description: |-
+          &7 Lista de permissões que são
+          &7 nescessárias para desbloquear
+          &7 este gerador.
+        list: '&b Permissões Nescessárias:'
+        value: '&b - [permission]'
+        none: '&b - nenhuma'
+      purchase_cost:
+        name: '&f&l Custo de Compra'
+        description: |-
+          &7 Créditos nescessários para
+          &7 comprar este gerador.
+        value: '&b Custo: [number]'
+      activation_cost:
+        name: '&f&l Custo de Ativação'
+        description: |-
+          &7 Créditos nescessários para
+          &7 ativar ou reativar
+          &7 este gerador.
+        value: '&b Custo: [number]'
+      biomes:
+        name: '&f&l Biomas Operacionais'
+        description: |-
+          &7 Lista de biomas onde este
+          &7 gerador pode operar.
+        list: '&b Biomas:'
+        value: '&b - [biome]'
+        any: '&b - qualquer'
+      treasure_amount:
+        name: '&f&l Quantidade de Tesouro'
+        description: |-
+          &7 Quantidade máxima de tesouro
+          &7 que pode ser obtido de uma vez.
+        value: '&b Quantidade: [number]'
+      treasure_chance:
+        name: '&f&l Chance de Tesouro'
+        description: |-
+          &7 Chance para tesouro ser
+          &7 obtido ao gerar.
+        value: '&b Chance: [number]'
+      info:
+        name: '&f&l Informação Geral'
+        description: |-
+          &7 Mostrar informação geral
+          &7 sobre esse gerador.
+      blocks:
+        name: '&f&l Lista de Blocos'
+        description: |-
+          &7 Mostra a lista de blocos e
+          &7 suas chances de serem gerados.
+      treasures:
+        name: '&f&l Lista de Tesouros'
+        description: |-
+          &7 Mostra lista de tesouro e
+          &7 chances de serem obtidos.
+          &7 Tesouros são obtidos ao
+          &7 gerar blocos.
+        drag-and-drop: |-
+          &7 Suporta arrastar e soltar
+          &7 items para espaços vazios.
+      block-icon:
+        name: '&f&l [material]'
+        description: '&b Chance: [#.##]'
+        actual: '&b Valor na Database: [number]'
+      treasure-icon:
+        name: '&f&l [material]'
+        description: '&b Chance: [#.####]'
+        actual: '&b Valor na Database: [number]'
+      show_cobblestone:
+        name: '&f&l Geradores de Pedregulho'
+        description: |-
+          &7 Exibir apenas geradores
+          &7 de pedregulho
+      show_stone:
+        name: '&f&l Geradores de Pedra'
+        description: |-
+          &7 Exibir apenas geradores
+          &7 de pedra
+      show_basalt:
+        name: '&f&l Basalt Generators'
+        description: |-
+          &7 Exibir apenas geradores
+          &7 de basalto
+      toggle_visibility:
+        name: '&f&l Geradores Desbloqueados'
+        description: |-
+          &7 Exibir apenas geradores
+          &7 desbloqueados
+      show_active:
+        name: '&f&l Geradores Ativos'
+        description: |-
+          &7 Exibir apenas geradores
+          &7 ativos
+      return:
+        name: '&f&l Voltar'
+        description: |-
+          &7 Voltar ao menu anterior ou
+          &7 sair da interface
+      previous:
+        name: '&f&l Página Anterior'
+        description: '&7 Ir para a página [number]'
+      next:
+        name: '&f&l Próxima Página'
+        description: '&7 Ir para a página [number]'
+      manage_users:
+        name: '&f&l Gerenciar Dados da Ilha'
+        description: |-
+          &7 Gerenciar dados da ilha
+          &7 no modo de jogo atual.
+      manage_generator_tiers:
+        name: '&f&l Gerenciar Geradores'
+        description: |-
+          &7 Gerenciar geradores
+          &7 no modo de jogo atual.
+      manage_generator_bundles:
+        name: '&f&l Gerenciar Conjuntos'
+        description: |-
+          &7 Gerenciar conjuntos
+          &7 no modo de jogo atual.
+      settings:
+        name: '&f&l Configurações'
+        description: |-
+          &7 Verificar e alterar
+          &7 configurações do addon.
+      import_template:
+        name: '&f&l Importar Template'
+        description: |-
+          &7 Importar arquivo de template
+          &7 localizado dentro do diretório
+          &7 do addon.
+      web_library:
+        name: '&f&l Biblioteca Web'
+        description: |-
+          &7 Acessar a biblioteca
+          &7 web que contêm geradores
+          &7 compartilhados.
+      export_from_database:
+        name: '&f&l Exportar Database'
+        description: |-
+          &7 Exportar a database em
+          &7 um único arquivo localizado
+          &7 no diretório do addon.
+      import_to_database:
+        name: '&f&l Importar Database'
+        description: |-
+          &7 Importar a database de
+          &7 um arquivo localizado
+          &7 no diretório do addon.
+      wipe_user_data:
+        name: '&f&l Limpar Database de Usuários'
+        description: |-
+          &7 Limpar dados de usuário
+          &7 para cada ilha no modo
+          &7 de jogo atual.
+      wipe_generator_data:
+        name: '&f&l Limpar Database de Geradores'
+        description: |-
+          &7 Limpar dados de geradores
+          &7 e conjuntos no modo de jogo atual
+      bundle_name:
+        name: '&f&l Nome do Conjunto'
+        description: '&7 Alterar o nome do conjunto.'
+        value: '&b Nome: &r [bundle]'
+      bundle_icon:
+        name: '&f&l Ícone do Conjunto'
+        description: '&7 Alterar o ícone do conjunto.'
+      bundle_description:
+        name: '&f&l Descrição do Conjunto'
+      bundle_info:
+        name: '&f&l Informações Gerais'
+        description: |-
+          &7 Mostra informações gerais
+          &7 sobre esse conjunto.
+      bundle_generators:
+        name: '&f&l Geradores'
+        description: |-
+          &7 Mostra uma lista com os geradores
+          &7 associados à este conjunto.
+      add_generator:
+        name: '&f&l Adicionar Generador'
+        description: |-
+          &7 Associar um gerador
+          &7 a esse conjunto.
+        list: '&b Geradores Selecionados:'
+        value: '&b - [generator]'
+      remove_generator:
+        name: '&f&l Remover Gerador'
+        description: |-
+          &7 Remover um gerador
+          &7 desse conjunto.
+        list: '&b Geradores Selecionados:'
+        value: '&b - [generator]'
+      create_bundle:
+        name: '&f&l Criar Conjunto'
+        description: |-
+          &7 Create a new bundle
+          &7 for this gamemode.
+      delete_bundle:
+        name: '&f&l Remover Bundle'
+        description: |-
+          &7 Remover um conjunto desse
+          &7 modo de jogo completamente.
+        list: '&b Conjuntos Selecionados:'
+        value: '&b - [bundle]'
+      name:
+        name: '&f&l Generator Name'
+        description: |-
+          &7 Title for this generator.
+          &7 Supports color codes.
+        value: '&b Name: &r [generator]'
+      icon:
+        name: '&f&l Generator Icon'
+        description: |-
+          &7 Item used to display this
+          &7 generator in all GUIs.
+      locked_icon:
+        name: '&f&l Locked Icon'
+        description: |-
+          &7 Item used to display this
+          &7 generator in all GUIs if
+          &7 it is locked.
+      description:
+        name: '&f&l Generator Description'
+        description: |-
+          &7 Text for generator that will
+          &7 be written under title.
+        value: '&b Description:'
+      deployed:
+        name: '&f&l Deployed'
+        description: |-
+          &7 Deployed generators are visible
+          &7 to and accessible by players.
+          &7 Undeployed generators will not
+          &7 generate blocks.
+        enabled: '&b This generator is &a deployed.'
+        disabled: '&b This generator is &c not deployed.'
+      add_material:
+        name: '&f&l Add Material'
+        description: |-
+          &7 Add new material to the
+          &7 current material list.
+      remove_material:
+        name: '&f&l Remove Materials'
+        description: |-
+          &7 Remove selected
+          &7 materials from the list.
+        selected-materials: '&7 Selected Materials:'
+        list-value: '&7 - [number] x [value]'
+      create_generator:
+        name: '&f&l Create Generator'
+        description: |-
+          &7 Create a new
+          &7 generator for
+          &7 the gamemode.
+      delete_generator:
+        name: '&f&l Remove Generator'
+        description: |-
+          &7 Remove generator
+          &7 from gamemode completely.
+        list: '&b Selected Generators:'
+        value: '&b - [generator]'
+      island_name:
+        name: '&f&l [name]'
+        description: |-
+          &7 [owner]
+          &b [members]
+          &b Island ID: &7 [id]
+        owner: '&b Owner: [player]'
+        list: '&b Members:'
+        value: '&b - [player]'
+      island_working_range:
+        name: '&f&l Island Working Range'
+        description: |-
+          &7 Working range for generators
+          &7 on current island.
+          &7 0 and below means unlimited
+          &7 range.
+        value: '&b Range: [number]'
+        overwritten: |-
+          &c Owner has a permission that
+          &c overwrites working range.
+      owner_working_range:
+        name: '&f&l Owner Working Range'
+        description: |-
+          &7 Working range for generators
+          &7 for the current owner.
+          &7 '0' means that owner range is
+          &7 ignored.
+          &7 '-1' means that owner has
+          &7 unlimitated working range.
+          "&7 Permission for user to assign:"
+          "&7&o '[gamemode].stone-generator."
+          "&7&o max-range.<number>'"
+        value: '&b Range: [number]'
+      island_max_generators:
+        name: '&f&l Max Island Generators'
+        description: "&7 Maximum active\n&7 generator tiers allowed\n&7 at the same\
+          \ time that\n&7 for current island.\n&7 0 and below means \n&7 unlimited."
+        value: '&b Max Generators: [number]'
+        overwritten: |-
+          &c Owner has a permission that
+          &c overwrites the generator count.
+      owner_max_generators:
+        name: '&f&l Max Owner Generators'
+        description: |-
+          &7 Maximum active concurrent
+          &7 generator tiers that the
+          &7 island owner is allowed.
+          &7 '0' means that owner amount
+          &7 is ignored.
+          &7 '-1' means that owner has
+          &7 unlimitated generator count.
+          "&7 Permission for user to assign:"
+          "&7&o '[gamemode].stone-generator."
+          "&7&o active-generators.<number>'"
+        value: '&b Max Generators: [number]'
+      island_bundle:
+        name: '&f&l Island Bundle'
+        description: "&7 Bundle that is assigned to\n&7 the current island.\n&7 Only\
+          \ generators from this \n&7 bundle can be used on the\n&7 island."
+        value: '&b Bundle: [bundle]'
+        overwritten: |-
+          &c Owner has a permission that
+          &c overwrites bundle.
+      owner_bundle:
+        name: '&f&l Owner Bundle'
+        description: "&7 Bundle that is assigned to\n&7 the current island owner.\n\
+          &7 Only generators from this \n&7 bundle can be used on the\n&7 island.\n\
+          \"&7 Permission for user to assign:\"\n\"&7&o '[gamemode].stone-generator.\"\
+          \n\"&7&o bundle.<bundle-id>'\""
+        value: '&b Bundle: [bundle]'
+      island_info:
+        name: '&f&l General Information'
+        description: |-
+          &7 Shows general information
+          &7 about this island.
+      island_generators:
+        name: '&f&l Island Generators'
+        description: |-
+          &7 Shows list of all generators
+          &7 that are available for the
+          &7 current island.
+      reset_to_default:
+        name: '&f&l Reset To Defaults'
+        description: |-
+          &7 Resets all island values
+          &7 to the default values from
+          &7 the settings.
+      is_online:
+        name: '&f&l Online Players'
+        description: |-
+          &7 List of online player
+          &7 islands.
+      all_islands:
+        name: '&f&l All Islands'
+        description: '&7 List of all islands.'
+      search:
+        name: '&f&l Search'
+        description: |-
+          &7 Search for a specific
+          &7 island.
+        search: '&b Value: [value]'
+      offline_generation:
+        name: '&f&l Offline Generation'
+        description: |-
+          &7 Prevents blocks from being
+          &7 generated if all island
+          &7 members are offline.
+        enabled: '&b Offline generation is &a enabled &b .'
+        disabled: '&b Offline generation is &c disabled &b .'
+      use_physic:
+        name: '&f&l Use Physics'
+        description: |-
+          &7 Using physics on block
+          &7 generation allows the
+          &7 use of redstone machines,
+          &7 however it reduces server
+          &7 performance a little.
+        enabled: '&b Physics is &a enabled &b .'
+        disabled: '&b Physics is &c disabled &b .'
+      working_range:
+        name: '&f&l Default Working Range'
+        description: |-
+          &7 Distance from players until
+          &7 block generation will stop.
+          &7 0 and below means unlimited.
+          &7 Setting requires server
+          &7 restart to activate.
+        value: '&b Range: [number]'
+      active_generators:
+        name: '&f&l Default Active Generators'
+        description: |-
+          &7 Default maximum amount of
+          &7 active generators at the
+          &7 same time.
+          &7 0 and below means unlimited.
+        value: '&b Count: [number]'
+      show_filters:
+        name: '&f&l Show Filters'
+        description: |-
+          &7 Filters are a top row in
+          &7 Player GUI, which allows
+          &7 to show only generators
+          &7 by type or status.
+          &7 This setting disables
+          &7 and hides them.
+        enabled: '&b Filters are &a enabled &b .'
+        disabled: '&b Filters are &c disabled &b .'
+      border_block:
+        name: '&f&l Border Block'
+        description: |-
+          &7 Border block is a material
+          &7 which surrounds the user GUI.
+          &7 Setting it to air disables
+          &7 it.
+      border_block_name:
+        name: '&f&l Border Block Name'
+        description: |-
+          &7 Display name for a border
+          &7 block.
+          &7 If it is set to empty, then
+          &7 it will use the block name.
+          &7 To set it as 1 empty space,
+          "&7 write 'empty'."
+        value: '&b Name: `&r[name]&r&b`'
+      unlock_notify:
+        name: '&f&l Notify On Unlock'
+        description: |-
+          &7 A message will be sent
+          &7 to a user when she unlocks
+          &7 a new generator.
+        enabled: '&b Notify on unlock is &a enabled &b.'
+        disabled: '&b Notify on unlock is &c disabled &b.'
+      disable_on_activate:
+        name: '&f&l Disable on Activation'
+        description: |-
+          &7 Disable oldest active generator
+          &7 if user activates a new
+          &7 generator.
+          &7 Useful for situations where
+          &7 only a single generator is allowed.
+        enabled: '&b Disable on activation is &a enabled &b.'
+        disabled: '&b Disable on activation is &c disabled &b.'
+      library:
+        name: '&f&l [name]'
+        description: |-
+          &7 [description]
+          &7 Author: [author]
+          &7 Created for [gamemode]
+          &7 Language: [lang]
+          &7 Version: [version]
+      accept_blocks:
+        name: '&f&l Accept the blocks'
+        description: |-
+          &7 Accepts selected blocks
+          &7 and returns.
+        selected-blocks: '&7 Selected Blocks:'
+        list-value: '&7 - [value]'
+      material-icon:
+        name: '&f&l [material]'
+      search_block:
+        name: '&f&l Search'
+        description: |-
+          &7 Search for a specific
+          &7 block.
+        search: '&b Value: [value]'
+      accept_biome:
+        name: '&f&l Accept the biomes'
+        description: |-
+          &7 Accepts selected biomes
+          &7 and returns.
+        selected-biomes: '&7 Selected Biomes:'
+        list-value: '&7 - [value]'
+      biome-icon:
+        name: '&f&l [biome]'
+      biome-groups:
+        lush:
+          name: '&f&l Lush'
+          description: '&7 Show only lush biomes'
+        dry:
+          name: '&f&l Dry'
+          description: '&7 Show only dry biomes'
+        cold:
+          name: '&f&l Cold'
+          description: '&7 Show only cold biomes'
+        snowy:
+          name: '&f&l Snowy'
+          description: '&7 Show only snowy biomes'
+        ocean:
+          name: '&f&l Ocean'
+          description: '&7 Show only ocean biomes'
+        nether:
+          name: '&f&l Nether'
+          description: '&7 Show only nether biomes'
+        the_end:
+          name: '&f&l The End'
+          description: '&7 Show only the end biomes'
+        neutral:
+          name: '&f&l Neutral'
+          description: '&7 Show only neutral biomes'
+        unused:
+          name: '&f&l Unused'
+          description: '&7 Show only unused biomes'
+      generator-types:
+        cobblestone:
+          name: '&f&l Cobblestone'
+          description: |-
+            &7 Works only with cobblestone
+            &7 generators.
+        stone:
+          name: '&f&l Stone'
+          description: |-
+            &7 Works only with stone
+            &7 generators.
+        basalt:
+          name: '&f&l Basalt'
+          description: |-
+            &7 Works only with basalt
+            &7 generators.
+        cobblestone_or_stone:
+          name: '&f&l Cobblestone or Stone'
+          description: |-
+            &7 Works with cobblestone and
+            &7 stone generators.
+        basalt_or_cobblestone:
+          name: '&f&l Basalt or Cobblestone'
+          description: |-
+            &7 Works with basalt and
+            &7 cobblestone generators.
+        basalt_or_stone:
+          name: '&f&l Basalt or Stone'
+          description: |-
+            &7 Works with basalt and
+            &7 stone generators.
+        any:
+          name: '&f&l Any'
+          description: '&7 Works with any generator.'
+    tips:
+      click-to-previous: '&e Click &7 to view previous page.'
+      click-to-next: '&e Click &7 to view next page.'
+      click-to-cancel: '&e Click &7 to cancel.'
+      click-to-choose: '&e Click &7 to choose.'
+      click-to-select: '&e Click &7 to select.'
+      click-to-deselect: '&e Click &7 to deselect.'
+      click-to-accept: '&e Click &7 to accept and return.'
+      click-to-filter-enable: '&e Click &7 to enable filter.'
+      click-to-filter-disable: '&e Click &7 to disable filter.'
+      click-to-activate: '&e Click &7 to activate.'
+      click-to-deactivate: '&e Click &7 to deactivate.'
+      click-gold-to-purchase: |-
+        &e Click &7 on gold block
+        &7 to purchase.
+      click-to-purchase: '&e Click &7 to purchase.'
+      click-to-return: '&e Click &7 to return.'
+      click-to-quit: '&e Click &7 to quit.'
+      click-to-wipe: '&e Click &7 to wipe.'
+      click-to-open: '&e Click &7 to open.'
+      click-to-export: '&e Click &7 to start exporting.'
+      click-to-change: '&e Click &7 to change.'
+      click-on-item: |-
+        &e Click &7 on item from your
+        &7 inventory.
+      click-to-view: '&e Click &7 to view.'
+      click-to-add: '&e Click &7 to add.'
+      click-to-remove: '&e Click &7 to remove.'
+      select-before: '&e Select &7 before continue.'
+      click-to-create: '&e Click &7 to create.'
+      right-click-to-select: '&e Right Click &7 to select.'
+      right-click-to-deselect: '&e Right Click &7 to deselect.'
+      click-to-toggle: '&e Click &7 to toggle.'
+      left-click-to-edit: '&e Left Click &7 to edit.'
+      right-click-to-lock: '&e Right Click &7 to lock.'
+      right-click-to-unlock: '&e Right Click &7 to unlock.'
+      click-to-perform: '&e Click &7 to perform.'
+      click-to-edit: '&e Click &7 to edit.'
+      right-click-to-clear: '&e Right Click &7 to clear.'
+      left-click-to-view: '&e Left Click &7 to view.'
+      left-click-to-purchase: '&e Left Click &7 to buy.'
+      left-click-to-activate: '&e Left Click &7 to activate.'
+      left-click-to-deactivate: '&e Left Click &7 to deactivate.'
+      right-click-to-view: '&e Right Click &7 to view.'
+      right-click-to-purchase: '&e Right Click &7 to buy.'
+      right-click-to-activate: '&e Right Click &7 to activate.'
+      right-click-to-deactivate: '&e Right Click &7 to deactivate.'
+      shift-click-to-view: '&e Shift Click &7 to view.'
+      shift-click-to-purchase: '&e Shift Click &7 to buy.'
+      shift-click-to-activate: '&e Shift Click &7 to activate.'
+      shift-click-to-deactivate: '&e Shift Click &7 to deactivate.'
+    descriptions:
+      generator:
+        lore: |-
+          [description]
+          [blocks]
+          [treasures]
+          [type]
+          [requirements]
+          [status]
+        blocks:
+          title: '&7&l Blocks:'
+          value: '&8 [material] - [#.##]%'
+        treasures:
+          title: '&7&l Treasure:'
+          value: '&8 [material] - [#.####]%'
+        requirements:
+          description: |-
+            [biomes]
+            [level]
+            [missing-permissions]
+          level: '&c&l Required Level: &r&c [number]'
+          permission-title: '&c&l Missing Permissions:'
+          permission: '&c  -[permission]'
+          biome-title: '&7&l Operates in:'
+          biome: '&8 [biome]'
+          any: '&7&l Operates in &e&o all &r&7&l biomes'
+        status:
+          locked: '&c Locked!'
+          undeployed: '&c Not Deployed!'
+          active: '&2 Active'
+          purchase-cost: '&e Purchase Cost: $[number]'
+          activation-cost: '&e Activation Cost: $[number]'
+        type:
+          title: '&7&l Supports:'
+          cobblestone: '&8 Cobblestone Generators'
+          stone: '&8 Stone Generators'
+          basalt: '&8 Basalt Generators'
+          any: '&7&l Supports &e&o all &r&7&l generators'
+      bundle-permission: |-
+        &7 Permission that must be
+        &7 assigned to player:
+        &7&o [gamemode].stone-generator.bundle.[id]
+      generators: '&7 Bundle Generators: '
+      generator-list: '&7 - [generator]'
+      selected: '&e Selected'
+      island-owner: '[player]''s island'
+      unknown: unknown
+  messages:
+    generator-loaded: '&a Generator &r ''[generator]'' &r&a  is loaded into local
+      cache.'
+    bundle-loaded: '&a Bundle &r ''[bundle]'' &r&a  is loaded into local cache.'
+    generator-deactivated: '&e Generator &r ''[generator]'' &r&e is deactivated.'
+    active-generators-reached: '&c Too many generators are activated. Try to deactivate
+      some before activating a new one.'
+    generator-cannot-be-unlocked: '&c Generator &r ''[generator]'' &r&c is not unlocked.'
+    generator-not-unlocked: '&c Generator &r ''[generator]'' &r&c is not unlocked.'
+    generator-not-purchased: '&c Generator &r ''[generator]'' &r&c is not purchased.'
+    no-credits: '&c Not enough credits to activate generator. Activation requires
+      [number] credits.'
+    generator-activated: '&e Generator &r ''[generator]'' &r&e is activated.'
+    generator-purchased: '&e Generator &r ''[generator]'' &r&e is purchased.'
+    generator-already-purchased: '&c Generator &r ''[generator]'' &r&c is already
+      purchased.'
+    island-level-not-reached: '&c Generator &r ''[generator]'' &r&c requires [number]
+      island level.'
+    missing-permission: '&c Generator &r ''[generator]'' &r&c requires permission
+      `[permission]`.'
+    no-credits-buy: '&c Not enough credits to purchase generator. This generator cost
+      [number] credits.'
+    import-count: '&e Imported [generator] new generators and [bundle] new bundles.'
+    start-downloading: '&e Start downloading library.'
+  errors:
+    no-generator-data: '&c Could not find a valid generator data'
+    no-island-data: '&c Island Data is not found.'
+    no-bundle-data: '&c Could not find a valid bundle data'
+    no-library-entries: '&c Could not find any library entry!'
+    no-file: '&c `[file]` file not found. Cannot perform importing.'
+    no-load: '&c Could not load `[file]` file. Error while reading: [description].'
+    not-a-gamemode-world: '&c World ''[world]'' is not a Game Mode Addon world.'
+    file-exist: '&c The file `[file]` already exist. Choose different name.'
+    generator-tier-not-found: '&c Generator with id ''[generator]'' &r&c not found
+      in [gamemode].'
+    no-generators-in-world: '&c There are no available generators for you in [world]'
+  conversations:
+    confirm-string: true, on, yes, confirm, y, valid, correct
+    deny-string: false, off, no, deny, n, invalid, incorrect
+    cancel-string: cancel
+    exit-string: cancel, exit, quit
+    cancelled: '&c Conversation cancelled!'
+    prefix: '&l&6 [BentoBox]: &r'
+    numeric-only: '&c The given [value] is not a number!'
+    not-valid-value: '&c The given number [value] is not valid. It must be larger
+      than [min] and smaller than [max]!'
+    new-description: '&a New description:'
+    write-search: '&e Please write a search value. (write ''cancel'' to exit)'
+    search-updated: '&a Search value updated.'
+    confirm-island-data-deletion: '&e Confirm that you want to delete all user data
+      from the database for [gamemode].'
+    user-data-removed: '&a Success, all user data for [gamemode] was removed!'
+    confirm-generator-data-deletion: '&e Confirm that you want to delete all generator
+      data from the database for [gamemode].'
+    generator-data-removed: '&a Success, all generator data for [gamemode] was removed!'
+    exported-file-name: '&e Please enter a file name for the exported database file.
+      (write ''cancel'' to exit)'
+    database-export-completed: '&a Success, the database export for [world] is completed.
+      File [file] generated.'
+    file-name-exist: '&c File with name ''[id]'' exists. Cannot overwrite.'
+    write-name: '&e Please enter a new name in chat.'
+    name-changed: '&a Success, the name was updated.'
+    write-description: '&e Please enter a new description in chat and ''quit'' on
+      a line by itself to finish.'
+    description-changed: '&a Success, the description was updated.'
+    new-object-created: '&a Success, new object is created in [world].'
+    object-already-exists: '&c The object with `[id]` is already is defined in gamemode.
+      Choose different one.'
+    confirm-deletion: '&e Confirm that you want to delete [number] objects: ([value])'
+    data-removed: '&a Success, the data was removed!'
+    input-number: '&e Please enter a number in chat.'
+    write-permissions: '&e Please enter the required permissions, one per line in
+      chat, and ''quit'' on a line by itself to finish.'
+    permissions-changed: '&a Success, generator permissions were updated.'
+    confirm-data-replacement: '&e Please confirm that you want to replace your current
+      generators with new one.'
+    new-generators-imported: '&a Success, new generators for [gamemode] were imported.'
+    click-text-to-purchase: '&e You have unlocked &r [generator]&r&e! Click here to
+      buy it now for [number].'
+    click-text-to-activate-vault: '&e You have unlocked &r [generator]&r&e! Click
+      here to activate it now for [number].'
+    click-text-to-activate: '&e You have unlocked &r [generator]&r&e! Click here to
+      activate it now.'
+  materials:
+    cobblestone: Cobblestone
+    stone:
+      name: Stone
+      description: ''
+  biomes:
+    plains: Plains
+    flower_forest:
+      name: Flower Forest
+      description: ''
+protection:
+  flags:
+    MAGIC_COBBLESTONE_GENERATOR:
+      name: Magic Generator
+      description: |-
+        &a Toggle to enable or disable
+        &a all Magic Generators
+        &a on the whole island
+      hint: '&e Magic Generators are disabled in island settings'
+    MAGIC_COBBLESTONE_GENERATOR_PERMISSION:
+      name: Magic Generator Permissions
+      description: |-
+        &a Select who can activate
+        &a and deactivate generators
