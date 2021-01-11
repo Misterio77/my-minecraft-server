@@ -1,11 +1,9 @@
 {
   "uniqueId": "double_island",
   "icon": "FURNACE",
-  "displayName": "&cDouble Island",
+  "displayName": "&6Ilha Dupla",
   "description": [
-    "&bTwo islands in one!",
-    "&bCan you reach the",
-    "&bdesert?"
+    "&eDuas ilhas em uma!"
   ],
   "requirePermission": false,
   "blueprints": {

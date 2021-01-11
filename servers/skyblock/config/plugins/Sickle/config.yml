@@ -1,0 +1,15 @@
+# Output Min and Output Max:
+# Change this to set the amount of crop to will be able to get from a harvest [0-64, default: 1 - 2]
+# Beaware that the min isnt bigger then the max value.
+# ---
+# Only Hoe:
+# Change this to only allow players to use sickle with thier hoes.
+# Change take_hoe_durability to make it so when using the hoe as a sickle it will take damage!
+# ---
+# bypass_regions is used where you want to disable building in wg regions but still allow Sickle to work.
+version: auto
+output_min: 1
+output_max: 2
+only_hoe: false
+take_hoe_duraility: false
+bypass_regions: false

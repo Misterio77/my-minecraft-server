@@ -1,12 +1,10 @@
 {
   "uniqueId": "default",
   "icon": "GRASS_BLOCK",
-  "displayName": "&eThe Original SkyBlock",
+  "displayName": "&6SkyBlock",
   "description": [
-    "&bStandard island, with a cow - moo!",
-    "&aIncludes an Overworld island",
-    "&cIncludes a Nether island",
-    "&6Includes an End island"
+    "&eIlha padrão, com uma vaquinha - muuu!",
+    "&eInclui ilha do Nether e do End"
   ],
   "requirePermission": false,
   "blueprints": {

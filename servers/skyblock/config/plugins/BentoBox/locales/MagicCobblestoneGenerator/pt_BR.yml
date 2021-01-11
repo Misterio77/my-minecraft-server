@@ -315,90 +315,90 @@ stone-generator:
           &7 to and accessible by players.
           &7 Undeployed generators will not
           &7 generate blocks.
-        enabled: '&b This generator is &a deployed.'
-        disabled: '&b This generator is &c not deployed.'
+        enabled: '&b Esse gerador está &a ativo.'
+        disabled: '&b Esse gerador está &c inativo.'
       add_material:
-        name: '&f&l Add Material'
+        name: '&f&l Adicionar Material'
         description: |-
-          &7 Add new material to the
-          &7 current material list.
+          &7 Adicionar novo material
+          &7 a lista de materiais atual.
       remove_material:
-        name: '&f&l Remove Materials'
+        name: '&f&l Remover Materiais'
         description: |-
-          &7 Remove selected
-          &7 materials from the list.
-        selected-materials: '&7 Selected Materials:'
+          &7 Remover materiais
+          &7 selecionados da lista.
+        selected-materials: '&7 Materiais Selecionados:'
         list-value: '&7 - [number] x [value]'
       create_generator:
-        name: '&f&l Create Generator'
+        name: '&f&l Criar Gerador'
         description: |-
-          &7 Create a new
-          &7 generator for
-          &7 the gamemode.
+          &7 Criar um novo
+          &7 gerador para esse
+          &7 modo de jogo.
       delete_generator:
-        name: '&f&l Remove Generator'
+        name: '&f&l Remover Gerador'
         description: |-
-          &7 Remove generator
-          &7 from gamemode completely.
-        list: '&b Selected Generators:'
+          &7 Remover gerador do modo
+          &7 de jogo completamente.
+        list: '&b Geradores Selecionados:'
         value: '&b - [generator]'
       island_name:
         name: '&f&l [name]'
         description: |-
           &7 [owner]
           &b [members]
-          &b Island ID: &7 [id]
-        owner: '&b Owner: [player]'
-        list: '&b Members:'
+          &b ID da Ilha: &7 [id]
+        owner: '&b Dono: [player]'
+        list: '&b Membros:'
         value: '&b - [player]'
       island_working_range:
-        name: '&f&l Island Working Range'
+        name: '&f&l Alcance de Trabalho da Ilha'
         description: |-
-          &7 Working range for generators
-          &7 on current island.
-          &7 0 and below means unlimited
-          &7 range.
-        value: '&b Range: [number]'
+          &7 Alcance de trabalho para geradores
+          &7 na ilha atual.
+          &7 0 e abaixo significa
+          &7 alcance ilimitado.
+        value: '&b Alcance: [number]'
         overwritten: |-
-          &c Owner has a permission that
-          &c overwrites working range.
+          &c O dono tem uma permissão que
+          &c sobreescreve o alcance de trabalho.
       owner_working_range:
-        name: '&f&l Owner Working Range'
+        name: '&f&l Alcance de Trabalho do Dono'
         description: |-
-          &7 Working range for generators
-          &7 for the current owner.
-          &7 '0' means that owner range is
-          &7 ignored.
-          &7 '-1' means that owner has
-          &7 unlimitated working range.
-          "&7 Permission for user to assign:"
+          &7 Alcance de trabalho para geradores
+          &7 para o dono atual.
+          &7 '0' significa que o alcance
+          &7 do dono é ignorado.
+          &7 '-1' significa que o dono
+          &7 tem alcance ilimitado.
+          "&7 Permissão para usuário usar:"
           "&7&o '[gamemode].stone-generator."
           "&7&o max-range.<number>'"
         value: '&b Range: [number]'
       island_max_generators:
-        name: '&f&l Max Island Generators'
-        description: "&7 Maximum active\n&7 generator tiers allowed\n&7 at the same\
-          \ time that\n&7 for current island.\n&7 0 and below means \n&7 unlimited."
-        value: '&b Max Generators: [number]'
+        name: '&f&l Geradores Máximos na Ilha'
+        description: "&7 Máximo de geradores\n&7 ativos permitidos ao\n&7 mesmo\
+          \ tempo para\n&7 a ilha atual.\n&7 0 e abaixo significa \n&7 ilimitado."
+        value: '&b Geradores Máximos: [number]'
         overwritten: |-
           &c Owner has a permission that
           &c overwrites the generator count.
       owner_max_generators:
-        name: '&f&l Max Owner Generators'
+        name: '&f&l Geradores Máximos do Dono'
         description: |-
-          &7 Maximum active concurrent
-          &7 generator tiers that the
-          &7 island owner is allowed.
-          &7 '0' means that owner amount
-          &7 is ignored.
-          &7 '-1' means that owner has
-          &7 unlimitated generator count.
-          "&7 Permission for user to assign:"
+          &7 Geradores máximos concurrentes
+          &7 que o dono da ilha pode
+          &7 ter ativos.
+          &7 '0' significa que a quantia
+          &7 do dono é ignorada.
+          &7 '-1' significa que o dono tem
+          &7 quantia ilimitada.
+          "&7 Permissão para usuário usar:"
           "&7&o '[gamemode].stone-generator."
           "&7&o active-generators.<number>'"
         value: '&b Max Generators: [number]'
       island_bundle:
-        name: '&f&l Island Bundle'
+        name: '&f&l Conjunto da Ilha'
         description: "&7 Bundle that is assigned to\n&7 the current island.\n&7 Only\
           \ generators from this \n&7 bundle can be used on the\n&7 island."
         value: '&b Bundle: [bundle]'

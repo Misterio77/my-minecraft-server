@@ -1,0 +1,204 @@
+# 
+# Protection flags that are used in current addon.
+visit:
+  commands:
+    admin:
+      main:
+        description: abre interface que permite editar opções padrão ou da ilha alvo.
+        parameters: <jogador>
+    player:
+      main:
+        description: abre interface ou visita ilha de jogador alvo.
+        parameters: <jogador>
+      configure:
+        description: abre interface que permite gerir opções de visitação.
+        parameters: ''
+  gui:
+    titles:
+      choose: '&0&l Escolher uma Ilha'
+      configure: '&0&l Configurar Acesso'
+      main: '&0&l Painel Administrativo'
+      select-island: '&0&l Selecione uma Ilha'
+      select-block: '&0&l Selecione um Bloco'
+    buttons:
+      previous:
+        name: '&f&l Página Anterior'
+        description: '&7 Mudar para a página [number]'
+      next:
+        name: '&f&l Próxima Página'
+        description: '&7 Mudar para a página [number]'
+      search:
+        name: '&f&l Buscar'
+        description: |-
+          &7 Buscar por uma ilha
+          &7 específica.
+        search: '&b Valor: [value]'
+      filter:
+        name: '&f&l Filtro'
+        description: |-
+          &7 Permite mostrar apenas
+          &7 ilhas filtradas.
+        value: '&7 Filtro ativo: [value]'
+        all_islands: '&b&o nenhum'
+        online_islands: '&b&o online'
+        can_visit: '&b&o visitável'
+      island:
+        name: '&f&l [name]'
+        description: |-
+          [owner]
+          [members]
+          [noone-online]
+          [payment]
+          [no-visit]
+        owner: '&7&l Dono: &r&b [player]'
+        members-title: '&7&l Membros:'
+        member: '&b - [player]'
+        unknown: desconhecido
+        noone-online: |-
+          &7 Nenhum dos membros da
+          &7 ilha estão online.
+        payment: |-
+          &7 Custa [number] visitar
+          &7 essa ilha.
+        no-visit: '&c Você não pode visitar a ilha.'
+      payment:
+        name: '&f&l Valor do Pagamento'
+        description: |-
+          &7 Permite alterar o pagamento por
+          &7 visitar a sua ilha.
+          &7 Valor atual: &b&o [number]
+      offline:
+        name: '&f&l Visitas Offline'
+        description: |-
+          &7 Permite alterar se jogadores
+          &7 podem visitar a ilha quando todos
+          &7 os membros estiverem offline.
+        enabled: '&7 Visitas offline &a habilitadas'
+        disabled: '&7 Visitar offline &c desabilitadas'
+      enabled:
+        name: '&f&l Permitir Visitas'
+        description: |-
+          &7 Permite alterar se
+          &7 visitas estão habilitadas.
+        enabled: '&7 Visitas estão &a habilitadas'
+        disabled: '&7 Visitas estão &c desabilitadas'
+      manage:
+        name: '&f&l Gerir Configurações da Ilha'
+        description: |-
+          &7 Permite editar configurações
+          &7 de visitação para a ilha
+          &7 selecionada.
+      reset:
+        name: '&f&l Redefinir para Padrão'
+        description: |-
+          &7 Redefine todas as configurações
+          &7 de visitação para os valores padrão.
+      tax:
+        name: '&f&l Gerir Tarifa'
+        description: |-
+          &7 Permite definir uma quantia
+          &7 de tarifa por visitar a ilha.
+        value: '&7 Tarifa atual: &b&o [number]'
+      default_payment:
+        name: '&f&l Pagamento Padrão'
+        description: |-
+          &7 Permite alterar
+          &7 valor do pagamento.
+        value: '&7 Pagamento atual: &b&o [number]'
+      default_offline:
+        name: '&f&l Offline Padrão'
+        description: |-
+          &7 Permite alterar se jogadores
+          &7 podem visitar a ilha quando todos
+          &7 os membros estiverem offline.
+        enabled: |-
+          &7 Por padrão visitas offline
+          &7 estão &a habilitadas
+        disabled: |-
+          &7 Por padrão visitas offline
+          &7 estão &c desabilitadas
+      default_enabled:
+        name: '&f&l Visitação Padrão'
+        description: |-
+          &7 Permite alterar se visitas
+          &7 estão habilitadas como padrão.
+        enabled: |-
+          &7 Por padrão visitas
+          &7 estão &a habilitadas
+        disabled: |-
+          &7 Por padrão visitas
+          &7 estão &c desabilitadas
+      at_top:
+        name: '&f&l Fileira de Filtro na Parte Superior'
+        description: |-
+          &7 Permite alterar se a fileira
+          &7 de filtro fica localizada na
+          &7 parte superior ou inferior.
+        enabled: '&7 Fileira de filtro agora fica na parte &a superior.'
+        disabled: '&7 Fileira de filtro agora fica na parte &a inferior.'
+      toggle_filters:
+        name: '&f&l Alternar Filtros'
+        description: |-
+          &7 Permite alternar fileira de
+          &7 filtros na interface do usuário.
+        enabled: '&7 Fileira de filtro foi &a habilitada.'
+        disabled: '&7 Fileira de filtro foi &c desabilitada.'
+      toggle_search:
+        name: '&f&l Alternar Busca'
+        description: |-
+          &7 Permite alternar botão de
+          &7 busca na interface de usuário.
+        enabled: '&7 Botão de busca foi &a habilitado.'
+        disabled: '&7 Botão de busca foi &c desabilitado.'
+    tips:
+      click-to-switch: '&e Clique &7 para alterar.'
+      click-to-previous: '&e Clique &7 para ver a página anterior.'
+      click-to-next: '&e Clique &7 para ver a próxima página.'
+      click-to-visit: '&e Clique &7 para visitar.'
+      click-to-toggle: '&e Clique &7 para alternar.'
+      click-to-change: '&e Clique &7 para modificar.'
+      click-to-edit: '&e Clique &7 para editar.'
+      click-to-choose: '&e Clique &7 para escolher.'
+      click-to-reset: '&e Clique &7 para redefinir.'
+      left-click-to-edit: '&e Clique Esquerdo &7 para editar.'
+      right-click-to-clear: '&e Clique Direito &7 para limpar.'
+      click-to-select: '&e Clique &7 para selecionar.'
+      click-to-deselect: '&e Clique &7 para deselecionar.'
+  errors:
+    noone-is-online: '&r Ninguém dessa ilha está online!'
+    not-enough-credits: '&r Você não tem créditos suficientes para visitar essa ilha. São nescessários
+      [number] créditos.'
+    cannot-withdraw-credits: '&r Não foi possível retirar [number] de sua conta! Operação
+      foi cancelada.'
+    cannot-deposit-credits: '&r Não foi possível depositar [number] na conta do dono da ilha!
+      Operação foi cancelada.'
+  conversations:
+    confirm-string: true, on, yes, confirm, y, valid, correct, sim, ligado, s
+    deny-string: false, off, no, deny, n, invalid, incorrect, não, nao, desligado, n
+    cancel-string: cancel, cancelar
+    exit-string: cancel, exit, quit, cancelar, sair
+    cancelled: '&c Conevrsação cancelada!'
+    prefix: '&l&6 [BentoBox]: &r'
+    numeric-only: '&c O valor [value] não é um número!'
+    not-valid-value: '&c O número [value] dado não é válido. Ele deve ser maior
+      que [min] e menor que [max]!'
+    write-search: '&e Por favor digite um valor de pesquisa. (digite ''cancelar'' para sair)'
+    search-updated: '&a Valor de pesquisa atualizado.'
+    input-number: '&e Por favor insira um número no chat.'
+    confirm-island-data-deletion: '&e Confirme que você quer apagar todos os dados de usuário
+      da database para o modo [gamemode].'
+    user-data-removed: '&a Sucesso, todos os dados de usuário em [gamemode] fora removidos!'
+protection:
+  flags:
+    ALLOW_VISITS_FLAG:
+      name: Proteção de visitas
+      description: |-
+        &a Alternar se a ilha pode
+        &a ser acessada por qualquer um.
+      hint: '&c Visitas estão desabilitadas nessa ilha'
+    VISIT_CONFIG_PERMISSION:
+      name: Gerir configuração de visitante
+      description: |-
+        &a Permite alterar quem
+        &a pode editar a configuração
+        &a de visitantes.

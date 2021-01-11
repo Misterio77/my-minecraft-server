@@ -1,11 +1,9 @@
 {
   "uniqueId": "classic-island",
   "icon": "GRASS_PATH",
-  "displayName": "&bClassic L Island",
+  "displayName": "&6SkyBlock Clássico",
   "description": [
-    "&2The Classic &6L-Shaped",
-    "&2Skyblock Island!",
-    "&eVery hard!"
+    "&eA ilha clássica em L"
   ],
   "requirePermission": false,
   "blueprints": {
@@ -13,5 +11,5 @@
     "NETHER": "nether-island",
     "THE_END": "end-island"
   },
-  "slot": 3
+  "slot": 2
 }
