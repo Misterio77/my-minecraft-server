@@ -19,7 +19,7 @@ date_format: DD/mm/yy HH:mm:ss
 debug: false
 expansions:
   bungee:
-    check_interval: 30
+    check_interval: 10
   pinger:
     offline: '&cOffline'
     check_interval: 1200
