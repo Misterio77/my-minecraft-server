@@ -23,7 +23,7 @@ block-disconnect-msg: Você está usando uma versão não compatível. Estamos n
 # You can customise the message we kick people with if you use ProtocolLib here.
 reload-disconnect-msg: Servidor recarregando, por favor reconecte!
 # We warn when there's a error converting item and block data over versions, should we suppress these? (Only suggested if spamming)
-suppress-conversion-warnings: false
+suppress-conversion-warnings: true
 # 
 # ----------------------------------------------------------#
 #                  GLOBAL PACKET LIMITER                   #

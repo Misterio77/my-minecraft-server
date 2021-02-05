@@ -37,3 +37,5 @@ echo "Enabling autosave"
 for service in $servers; do
     docker-compose exec -T $service rcon-cli save-on &> /dev/null
 done
+
+true
