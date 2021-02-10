@@ -11,7 +11,7 @@ services:
       TZ: America/Sao_Paulo
       TYPE: CUSTOM
       BUNGEE_JAR_URL: >-
-        https://github.com/HexagonMC/BungeeCord/releases/download/v271/BungeeCord.jar
+        https://github.com/UeberallGebannt/KettleCord/releases/download/v5/BungeeCord.jar
       REPLACE_ENV_VARIABLES: 'TRUE'
       ENV_VARIABLE_PREFIX: CFG_
       CFG_DB_HOST: database
@@ -219,112 +219,6 @@ services:
       ENV_VARIABLE_PREFIX: CFG_
       CFG_BUKKIT_ALLOW_END: 'true'
       CFG_SERVER_NAME: modpack
-      CFG_DB_HOST: database
-      CFG_DB_PORT: '3306'
-      CFG_DB_NAME: '${DB_NAME}'
-      CFG_DB_USERNAME: '${DB_USERNAME}'
-      CFG_DB_PASSWORD: '${DB_PASSWORD}'
-  modpack-e2es:
-    build: ./servers/modpack-e2es
-    stdin_open: true
-    tty: true
-    volumes:
-      - './worlds/modpack-e2es:/data/world'
-    environment:
-      TZ: America/Sao_Paulo
-      UID: 1001
-      GID: 1001 
-      TYPE: CUSTOM
-      VERSION: 1.12.2
-      CUSTOM_SERVER: >-
-        https://github.com/magmafoundation/Magma/releases/download/vbb50f45/Magma-bb50f45-server.jar
-      ENABLE_AUTOPAUSE: 'TRUE'
-      AUTOPAUSE_TIMEOUT_EST: '120'
-      AUTOPAUSE_TIMEOUT_INIT: '600'
-      AUTOPAUSE_TIMEOUT_KN: '10'
-      MAX_TICK_TIME: '6000000'
-      COPY_CONFIG_DEST: /data
-      OVERRIDE_SERVER_PROPERTIES: 'TRUE'
-      REMOVE_OLD_MODS: 'TRUE'
-      USE_AIKAR_FLAGS: 'true'
-      ONLINE_MODE: 'FALSE'
-      MAX_PLAYERS: '50'
-      EULA: 'TRUE'
-      OPS: 'misterio'
-      MEMORY: 4G
-      DIFFICULTY: normal
-      MODE: survival
-      PVP: 'true'
-      SERVER_NAME: modpack-e2es
-      LEVEL: world
-      ALLOW_NETHER: 'true'
-      SPAWN_ANIMALS: 'true'
-      SPAWN_MONSTERS: 'true'
-      SPAWN_NPCS: 'true'
-      SPAWN_PROTECTION: '2'
-      VIEW_DISTANCE: '10'
-      LEVEL_TYPE: voidworld
-      ALLOW_FLIGHT: 'true'
-      FORCE_GAMEMODE: 'true'
-      ENABLE_COMMAND_BLOCK: 'false'
-      GENERATE_STRUCTURES: 'true'
-      REPLACE_ENV_VARIABLES: 'TRUE'
-      ENV_VARIABLE_PREFIX: CFG_
-      CFG_BUKKIT_ALLOW_END: 'true'
-      CFG_SERVER_NAME: modpack-e2es
-      CFG_DB_HOST: database
-      CFG_DB_PORT: '3306'
-      CFG_DB_NAME: '${DB_NAME}'
-      CFG_DB_USERNAME: '${DB_USERNAME}'
-      CFG_DB_PASSWORD: '${DB_PASSWORD}'
-  modpack-atm3:
-    build: ./servers/modpack-atm3
-    stdin_open: true
-    tty: true
-    volumes:
-      - './worlds/modpack-atm3:/data/world'
-    environment:
-      TZ: America/Sao_Paulo
-      UID: 1001
-      GID: 1001 
-      TYPE: CUSTOM
-      VERSION: 1.12.2
-      CUSTOM_SERVER: >-
-        https://github.com/magmafoundation/Magma/releases/download/vbb50f45/Magma-bb50f45-server.jar
-      ENABLE_AUTOPAUSE: 'TRUE'
-      AUTOPAUSE_TIMEOUT_EST: '120'
-      AUTOPAUSE_TIMEOUT_INIT: '600'
-      AUTOPAUSE_TIMEOUT_KN: '10'
-      MAX_TICK_TIME: '6000000'
-      COPY_CONFIG_DEST: /data
-      OVERRIDE_SERVER_PROPERTIES: 'TRUE'
-      REMOVE_OLD_MODS: 'TRUE'
-      USE_AIKAR_FLAGS: 'true'
-      ONLINE_MODE: 'FALSE'
-      MAX_PLAYERS: '50'
-      EULA: 'TRUE'
-      OPS: 'misterio'
-      MEMORY: 4G
-      DIFFICULTY: normal
-      MODE: survival
-      PVP: 'true'
-      SERVER_NAME: modpack-atm3
-      LEVEL: world
-      ALLOW_NETHER: 'true'
-      SPAWN_ANIMALS: 'true'
-      SPAWN_MONSTERS: 'true'
-      SPAWN_NPCS: 'true'
-      SPAWN_PROTECTION: '2'
-      VIEW_DISTANCE: '10'
-      LEVEL_TYPE: BIOMESOP
-      ALLOW_FLIGHT: 'true'
-      FORCE_GAMEMODE: 'true'
-      ENABLE_COMMAND_BLOCK: 'false'
-      GENERATE_STRUCTURES: 'true'
-      REPLACE_ENV_VARIABLES: 'TRUE'
-      ENV_VARIABLE_PREFIX: CFG_
-      CFG_BUKKIT_ALLOW_END: 'true'
-      CFG_SERVER_NAME: modpack-atm3
       CFG_DB_HOST: database
       CFG_DB_PORT: '3306'
       CFG_DB_NAME: '${DB_NAME}'
