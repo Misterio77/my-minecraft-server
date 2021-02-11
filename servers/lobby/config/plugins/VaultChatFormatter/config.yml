@@ -14,4 +14,4 @@
 # {message} ==> the message being sent by the player
 #
 # Standard Minecraft color codes can be used in the format.
-format: "&c(${CFG_SERVER_NAME} - local) &r{prefix}{name}{suffix}&r: {message}"
+format: "&c[L] &e(${CFG_SERVER_NAME}) &r{prefix}{name}{suffix}&r: {message}"
