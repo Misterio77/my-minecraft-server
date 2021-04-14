@@ -1,0 +1,17 @@
+# Messages
+#Prefix that every message will have, except "NoPermission".
+Prefix: ""
+
+#Error messages
+NoPermission: "&cVocê não tem permissão."
+WarpNotFound: "&cEsse warp não existe."
+
+#General messages
+WarpMessage: "&7Teleportado para &6%warp%"
+
+#Admin messages
+SetWarpMessage: "&7O warp \"&6%warp%&7\" &7foi criado."
+DelWarpMessage: "&7O warp \"&c%warp%&7\" &7foi removido."
+
+# You can rate this plugin at https://www.spigotmc.org/resources/warping.60933/ 
+# PM G1lles on SpigotMC for support. Do not use the rating section for support.
