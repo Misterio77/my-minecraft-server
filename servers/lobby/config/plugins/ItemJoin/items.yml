@@ -58,10 +58,10 @@ items:
         - 'No momento temos um servidor de &d&lSurvival&r quase 100% vanilla.'
         - 'Toda a comunidade do ICMC, USP e amigos são bem vindos.'
         - 'Optamos por não usar plugins de proteção, então lembre-se de respeitar a construção do amiguinho e só chamar pessoas de confiança.'
-#      servidores_skyblock:
-#        - 'Também temos um servidor &d&lSkyblock&r no estilo clássico.'
-#        - 'Você pode, junto com seus amigos ou sozinho, construir sua ilha, expandir, e até competir nos rankings!'
-#        - 'Futuramente podemos adicionar coisas, dê sugestões caso queira ver algo específico!'
+      servidores_skyblock:
+        - 'Também temos um servidor &d&lSkyblock&r no estilo clássico.'
+        - 'Você pode, junto com seus amigos ou sozinho, construir sua ilha, expandir, e até competir nos rankings!'
+        - 'Futuramente podemos adicionar coisas, dê sugestões caso queira ver algo específico!'
 #      servidores_factions:
 #        - 'Recentemente adicionamos o clássico &d&lFactions&r, com algumas diferenças.'
 #        - 'O mundo é composto de ilha flutuantes, sem nether ou end. Diamantes são extremamente escassos.'
@@ -129,33 +129,33 @@ items:
       inventory:
         - 'server: skyblock'
     itemflags: hide-attributes
-  server-factions:
-    id: DIAMOND_SWORD
-    name: '&eFactions'
-    lore:
-       - '%pinger_online_factions%'
-       - '&7%bungee_factions% jogador(es)'
-    slot: 5
-    limit-modes: ADVENTURE
-    triggers: join, respawn, gamemode-switch
-    commands:
-      interact:
-        - 'server: factions'
-      inventory:
-        - 'server: factions'
-    itemflags: hide-attributes
-  server-modpacks:
-    id: IRON_INGOT
-    name: '&eOutros Modpacks'
-    lore:
-       - '&bListar'
-       - '&7%math_{bungee_modpack-e2}+{bungee_modpack-e2es}[precision:0]% jogador(es)'
-    slot: 1
-    limit-modes: ADVENTURE
-    triggers: join, respawn, gamemode-switch
-    commands:
-      interact:
-        - 'player: modpacks'
-      inventory:
-        - 'player: modpacks'
-    itemflags: hide-attributes
+#  server-factions:
+#    id: DIAMOND_SWORD
+#    name: '&eFactions'
+#    lore:
+#       - '%pinger_online_factions%'
+#       - '&7%bungee_factions% jogador(es)'
+#    slot: 5
+#    limit-modes: ADVENTURE
+#    triggers: join, respawn, gamemode-switch
+#    commands:
+#      interact:
+#        - 'server: factions'
+#      inventory:
+#        - 'server: factions'
+#    itemflags: hide-attributes
+#  server-modpacks:
+#    id: IRON_INGOT
+#    name: '&eOutros Modpacks'
+#    lore:
+#       - '&bListar'
+#       - '&7%math_{bungee_modpack-e2}+{bungee_modpack-e2es}[precision:0]% jogador(es)'
+#    slot: 1
+#    limit-modes: ADVENTURE
+#    triggers: join, respawn, gamemode-switch
+#    commands:
+#      interact:
+#        - 'player: modpacks'
+#      inventory:
+#        - 'player: modpacks'
+#    itemflags: hide-attributes
