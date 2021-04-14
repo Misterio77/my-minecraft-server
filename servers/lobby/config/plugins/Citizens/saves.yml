@@ -134,7 +134,7 @@ npc:
         updateSkins: false
       location:
         bodyYaw: -190.0
-        world: lobby
+        world: world
         x: '-5.5'
         y: '107.5'
         z: '9.5'
@@ -304,7 +304,7 @@ npc:
     traits:
       location:
         bodyYaw: 177.94641
-        world: lobby
+        world: world
         x: '6.5'
         y: '107.5'
         z: '9.5'

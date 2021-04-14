@@ -28,7 +28,7 @@ holograms:
     - §cEm breve.
     - §7%bungee_criativo% jogador(es)
   factions:
-    location: lobby;-5.5;110.0;9.5;0.0;180.0
+    location: world;-5.5;110.0;9.5;0.0;180.0
     lines:
     - §e§lFactions
     - '%pinger_online_factions% §7%pinger_version_factions%'
@@ -46,7 +46,7 @@ holograms:
     - '%pinger_online_modpack% §7%pinger_version_modpack%'
     - §7%bungee_modpack% jogador(es)
   modpack_outros:
-    location: lobby;6.5;110.0;9.5;0.0;180.0
+    location: world;6.5;110.0;9.5;0.0;180.0
     lines:
     - §e§lOutros Modpacks
     - §bListar
