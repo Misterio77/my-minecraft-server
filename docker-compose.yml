@@ -102,7 +102,7 @@ services:
       SPAWN_ANIMALS: 'true'
       SPAWN_MONSTERS: 'true'
       SPAWN_NPCS: 'true'
-      SPAWN_PROTECTION: '2'
+      SPAWN_PROTECTION: '5'
       VIEW_DISTANCE: '10'
       LEVEL_TYPE: default
       ALLOW_FLIGHT: 'true'

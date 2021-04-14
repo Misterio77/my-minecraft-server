@@ -88,9 +88,6 @@ items:
   server-modpack:
     id: BLAZE_ROD
     name: '&eModpack BSI'
-    lore:
-       - '%pinger_online_modpack%'
-       - '&7%bungee_modpack% jogador(es)'
     slot: 2
     limit-modes: ADVENTURE
     triggers: join, respawn, gamemode-switch
@@ -102,9 +99,6 @@ items:
   server-survival:
     id: IRON_PICKAXE
     name: '&eSurvival'
-    lore:
-       - '%pinger_online_survival%'
-       - '&7%bungee_survival% jogador(es)'
     slot: 3
     limit-modes: ADVENTURE
     triggers: join, respawn, gamemode-switch
@@ -117,9 +111,6 @@ items:
   server-skyblock:
     id: OAK_SAPLING
     name: '&eSkyblock'
-    lore:
-       - '%pinger_online_skyblock%'
-       - '&7%bungee_skyblock% jogador(es)'
     slot: 4
     limit-modes: ADVENTURE
     triggers: join, respawn, gamemode-switch
@@ -132,9 +123,6 @@ items:
 #  server-factions:
 #    id: DIAMOND_SWORD
 #    name: '&eFactions'
-#    lore:
-#       - '%pinger_online_factions%'
-#       - '&7%bungee_factions% jogador(es)'
 #    slot: 5
 #    limit-modes: ADVENTURE
 #    triggers: join, respawn, gamemode-switch
@@ -147,9 +135,6 @@ items:
 #  server-modpacks:
 #    id: IRON_INGOT
 #    name: '&eOutros Modpacks'
-#    lore:
-#       - '&bListar'
-#       - '&7%math_{bungee_modpack-e2}+{bungee_modpack-e2es}[precision:0]% jogador(es)'
 #    slot: 1
 #    limit-modes: ADVENTURE
 #    triggers: join, respawn, gamemode-switch
