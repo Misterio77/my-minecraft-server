@@ -42,9 +42,9 @@ items:
       contaskin_1:
         - '&3&lConta e Skin'
         - ''
-        - 'Por ser um servidor pirata, precisamos utilizar autenticação.'
+        - 'Por ser um servidor com suporte a pirata, precisamos de autenticação.'
         - 'Quem tem o original pode optar por utilizar a da Mojang'
-        - 'Caso você esteja utilizando o original e ainda seja pedido login, use &3/original&r para marcar sua conta.'
+        - 'Caso você esteja com original e ainda seja pedido login, use &3/original&r para marcar sua conta.'
       contaskin_2:
         - 'Caso seu nome tenha uma skin, ela será usada.'
         - 'Utilize o comando &3/skin <nome>&0 para usar skins de qualquer outra conta'
