@@ -1,0 +1,14 @@
+spawn:
+  World: world
+  X: 300000.5
+  Y: 64.0
+  Z: 300000.5
+  YAW: 0.0
+  PITCH: 0.0
+vila:
+  World: world
+  X: 128.5
+  Y: 72.0
+  Z: -232.5
+  YAW: 0
+  PITCH: 0
