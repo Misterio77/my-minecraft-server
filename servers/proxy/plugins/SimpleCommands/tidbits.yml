@@ -6,6 +6,10 @@ help|ajuda|comandos: |
     &7- &alobby
   &e(Use &6/server nome&e ou &6/nome&e para mudar de servidor.)
 
+  &eTemos o chat &llocal&e o &bglobal&e separados.
+  &eO local só pode ser lido por jogadores no mesmo servidor,
+  &euse &l/local&e e &b/global&e para alternar entre eles.
+
   &eUse &6/discord&e para ver o link do Discord.
   &aVeja o livro no lobby para mais informações.
 discord: "&bEntre no nosso Discord: &ehttps://discord.gg/B3VgXvW"

@@ -88,7 +88,7 @@ items:
   server-modpack:
     id: BLAZE_ROD
     name: '&eModpack BSI'
-    slot: 1
+    slot: 3
     limit-modes: ADVENTURE
     triggers: join, respawn, gamemode-switch
     commands:
@@ -99,7 +99,7 @@ items:
   server-survival:
     id: IRON_PICKAXE
     name: '&eSurvival'
-    slot: 2
+    slot: 4
     limit-modes: ADVENTURE
     triggers: join, respawn, gamemode-switch
     commands:
@@ -111,7 +111,7 @@ items:
   server-skyblock:
     id: OAK_SAPLING
     name: '&eSkyblock'
-    slot: 3
+    slot: 5
     limit-modes: ADVENTURE
     triggers: join, respawn, gamemode-switch
     commands:

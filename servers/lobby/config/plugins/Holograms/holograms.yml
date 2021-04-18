@@ -10,6 +10,9 @@ holograms:
     - Use §e/help§r ou veja o §elivro§r para mais info.
     - §r
     - Explore o lobby! Você tem uma §bElytra§r.
+    - §r
+    - Use §b/global§r e §c/local§r para
+    - alternar entre os chats.
   servers:
     location: lobby;0.5;109.0;7.5;0.0;180.0
     lines:
