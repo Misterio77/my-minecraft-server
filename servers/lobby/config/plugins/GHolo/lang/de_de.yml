@@ -1,0 +1,87 @@
+#
+# Language-File translated by:		Gecolay
+#
+  
+  
+  
+Plugin:
+  
+  plugin-enabled: "[P]&a Das Plugin wurde erfolgreich aktiviert."
+  plugin-hook: "[P]&a Erfolgreich mit&6 %Link%&a verbunden!"
+  plugin-update: "[P]&a Neue Version verfügbar:&6 %NewVersion%&a!\n[P]&a Aktuell verwendete Version:&6 %Version%&a!\n[P]&a Laden Sie die neuste Version von:\n[P]&6 %Path%"
+  plugin-disabled: "[P]&a Das Plugin wurde erfolgreich deaktiviert."
+  plugin-prefix: "&7[&6GHolo&7]"
+  
+  
+  
+Messages:
+  
+  command-reload: "[P]&a Die Einstellungen wurden erfolgreich neu geladen."
+  command-permission-error: "[P]&c Sie haben keine Berechtigung, diesen Befehl zu verwenden!"
+  command-console-error: "[P]&c Dieser Befehl ist nur für Spieler!"
+  command-gholo-use-error: "[P]&c Befehl: /holo help"
+  command-gholo-create-use-error: "[P]&c Befehl: /holo create <Id>"
+  command-gholo-create-exists-error: "[P]&c Holo&6 %Holo%&c existiert bereits!"
+  command-gholo-create: "[P]&a Holo&6 %Holo%&a erfolgreich erstellt."
+  command-gholo-info-use-error: "[P]&c Befehl: /holo info <Id>"
+  command-gholo-info-exists-error: "[P]&c Holo&6 %Holo%&c existiert nicht!"
+  command-gholo-remove-use-error: "[P]&c Befehl: /holo remove <Id>"
+  command-gholo-remove-exists-error: "[P]&c Holo&6 %Holo%&c existiert nicht!"
+  command-gholo-remove: "[P]&a Holo&6 %Holo%&a erfolgreich entfernt."
+  command-gholo-tp-use-error: "[P]&c Befehl: /holo tp <Id>"
+  command-gholo-tp-exists-error: "[P]&c Holo&6 %Holo%&c existiert nicht!"
+  command-gholo-tphere-use-error: "[P]&c Befehl: /holo tphere <Id>"
+  command-gholo-tphere-exists-error: "[P]&c Holo&6 %Holo%&c existiert nicht!"
+  command-gholo-addrow-use-error: "[P]&c Befehl: /holo addrow <Id> <Text>"
+  command-gholo-addrow-exists-error: "[P]&c Holo&6 %Holo%&c existiert nicht!"
+  command-gholo-removerow-use-error: "[P]&c Befehl: /holo removerow <Id> <Zeile>"
+  command-gholo-removerow-exists-error: "[P]&c Holo&6 %Holo%&c existiert nicht!"
+  command-gholo-removerow-row-exists-error: "[P]&c Zeile&b %Row%&c existiert nicht!"
+  command-gholo-setrow-use-error: "[P]&c Befehl: /holo setrow <Id> <Zeile> <Text>"
+  command-gholo-setrow-exists-error: "[P]&c Holo&6 %Holo%&c existiert nicht!"
+  command-gholo-setrow-row-exists-error: "[P]&c Zeile&b %Row%&c existiert nicht!"
+  command-gholo-copy-use-error: "[P]&c Befehl: /holo copy <Id> <Id>"
+  command-gholo-copy-exists-error: "[P]&c Holo&6 %Holo%&c existiert nicht!"
+  command-gholo-copy: "[P]&a Holo&6 %Holo%&a erfolgreich kopiert."
+  command-gholo-image-use-error: "[P]&c Befehl: /holo image <Id> avatar/helm/file/url <Wert> [<Größe>]"
+  command-gholo-image-exists-error: "[P]&c Holo&6 %Holo%&c existiert nicht!"
+  command-gholo-image-avatar-error: "[P]&c Der Bild-Avatar&6 %Avatar%&c kann nicht benutzt werden!"
+  command-gholo-image-avatar: "[P]&a Bild-Avatar&6 %Avatar%&a erfolgreich gesetzt."
+  command-gholo-image-helm-error: "[P]&c Der Bild-Helm&6 %Helm%&c kann nicht benutzt werden!"
+  command-gholo-image-helm: "[P]&a Bild-Helm&6 %Helm%&a erfolgreich gesetzt."
+  command-gholo-image-file-exists-error: "[P]&c Bild-Datei&6 %File%&c existiert nicht!"
+  command-gholo-image-file-error: "[P]&c Die Bild-Datei&6 %File%&c kann nicht benutzt werden!"
+  command-gholo-image-file: "[P]&a Bild-Datei&6 %File%&a erfolgreich gesetzt."
+  command-gholo-image-url-error: "[P]&c Die Bild-URL&6 %URL%&ckann nicht benutzt werden!"
+  command-gholo-image-url: "[P]&a Bild-URL&6 %URL%&a erfolgreich gesetzt."
+  command-gholo-import-use-error: "[P]&c Befehl: /holo import <Plugin>"
+  command-gholo-import-plugin-use-error: "[P]&c Plugin&6 %Plugin%&c kann nicht importiert werden!"
+  command-gholo-import-plugin-import-error: "[P]&c Keine Holos vom Plugin&6 %Plugin%&c importiert!"
+  command-gholo-import-plugin: "[P]&a Holos vom Plugin&6 %Plugin%&a erfolgreich importiert."
+  
+  
+  
+GHoloHelp:
+  
+  header: "&7------------ [&6Holo&7] ------------"
+  help: "&b/holo help&7 ->&6 Hilfelist"
+  create: "&b/holo create <Id>&7 ->&6 Erstelle ein Holo"
+  info: "&b/holo info <Id>&7 ->&6 Zeige Holo-Inhalt"
+  remove: "&b/holo remove <Id>&7 ->&6 Entferne ein Holo"
+  tp: "&b/holo tp <Id>&7 ->&6 Teleportiere zu einem Holo"
+  tphere: "&b/holo tphere <Id>&7 ->&6 Teleportiere ein Holo zu deiner Position"
+  addrow: "&b/holo addrow <Id> <Text>&7 ->&6 Holo-Zeile hinzufügen"
+  removerow: "&b/holo removerow <Id> <Zeile>&7 ->&6 Holo-Zeile entfernen"
+  setrow: "&b/holo setrow <Id> <Zeile> <Text>&7 ->&6 Holo-Zeile setzen"
+  copy: "&b/holo copy <Id> <Id>&7 ->&6 Holo-Inhalt kopieren"
+  image: "&b/holo image <Id> avatar/helm/file/url <Wert> [<Größe>]&7 ->&6 Setze Holo-Inhalt mit Bild"
+  import: "&b/holo import <Plugin>&7 ->&6 Importiere Holos aus einem anderen Plugin"
+  footer: "&7------------------------------"
+  
+  
+  
+GHoloInfo:
+  
+  header: "&7------------ [&6Holo&7] ------------"
+  row: "&b%RowId%&7.&r %Row%"
+  footer: "&7------------------------------"

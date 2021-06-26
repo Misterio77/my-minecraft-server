@@ -11,7 +11,7 @@ services:
       TZ: America/Sao_Paulo
       TYPE: CUSTOM
       BUNGEE_JAR_URL: >-
-        https://github.com/UeberallGebannt/KettleCord/releases/download/v5/BungeeCord.jar
+        https://github.com/UeberallGebannt/KettleCord/releases/download/v6/BungeeCord.jar
       REPLACE_ENV_VARIABLES: 'TRUE'
       ENV_VARIABLE_PREFIX: CFG_
       CFG_DB_HOST: database

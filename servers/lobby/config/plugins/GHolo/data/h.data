@@ -1,0 +1,34 @@
+H:
+  servers:
+    l: lobby:0.5:109.0:7.5
+    c:
+    - '&b&lServidores'
+    - '&7%bungee_total% jogador(es) online'
+  survival:
+    l: lobby:0.5:109.5:9.5
+    c:
+    - '&e&lSurvival'
+    - '%pinger_online_survival% &7%pinger_version_survival%'
+    - '&7%bungee_survival% jogador(es)'
+  skyblock:
+    l: lobby:-2.5:110.0:9.5
+    c:
+    - '&e&lSkyblock'
+    - '%pinger_online_skyblock% &7%pinger_version_skyblock%'
+    - '&7%bungee_skyblock% jogador(es)'
+  nome:
+    l: lobby:0.5:108.5:2.5
+    c:
+    - '&7&k&!&r Bem-vindx ao &6Minecraft da Informação &7&k !!'
+    - '&r'
+    - '&bClique&r em um NPC ou use &bcomandos&r'
+    - para escolher seu servidor
+    - '&r'
+    - Use &b/global&r e &c/local&r para
+    - alternar entre os chats.
+  modpack:
+    l: lobby:3.5:110.0:9.5
+    c:
+    - '&e&lModpack BSI'
+    - '%pinger_online_modpack% &7%pinger_version_modpack%'
+    - '&7%bungee_modpack% jogador(es)'
